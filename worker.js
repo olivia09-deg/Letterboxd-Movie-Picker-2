@@ -38,15 +38,32 @@ async function film(slug) {
   const links = (kind) => uniq([...html.matchAll(new RegExp(`href="/films/${kind}/[^"/]+/"[^>]*>([^<]+)<`, 'g'))].map((m) => decode(m[1].trim())));
   const ogTitle = decode(og('title') || nice(slug));
   const year = +(html.match(/href="\/films\/year\/(\d{4})\//) || [])[1] || +(ogTitle.match(/\((\d{4})\)\s*$/) || [])[1] || null;
-  return { slug, title: ogTitle.replace(/\s*\(\d{4}\)\s*$/, ''), year, genres: links('genre'), languages: links('language'), image: og('image') || null };
+  const foot = (html.match(/class="text-link text-footer"[^>]*>([\s\S]*?)<\/p>/) || [])[1] || html;
+  const rt = (foot.match(/([\d,]+)(?:&nbsp;|\s)*mins?\b/) || [])[1];
+  const runtime = rt ? +rt.replace(/,/g, '') : null;
+  const tm = html.match(/themoviedb\.org\/(movie|tv)\/(\d+)/);
+  const tmdb = tm && tm[1] === 'movie' ? +tm[2] : null;
+  return { slug, title: ogTitle.replace(/\s*\(\d{4}\)\s*$/, ''), year, genres: links('genre'), languages: links('language'), image: og('image') || null, runtime, tmdb };
+}
+
+async function watch(id, country, key) {
+  if (!key) throw Object.assign(new Error('TMDB key is not set on the Worker.'), { status: 501 });
+  if (!/^\d{1,9}$/.test(id || '') || !/^[A-Z]{2}$/.test(country || '')) throw Object.assign(new Error('Bad request.'), { status: 400 });
+  const res = await fetch(`https://api.themoviedb.org/3/movie/${id}/watch/providers?api_key=${key}`, { cf: { cacheTtl: 3600, cacheEverything: true } });
+  if (!res.ok) throw Object.assign(new Error('TMDB request failed (' + res.status + ').'), { status: 502 });
+  const d = ((await res.json()).results || {})[country] || {};
+  const names = (a) => (a || []).map((p) => p.provider_name);
+  return { country, link: d.link || null, stream: uniq([...names(d.flatrate), ...names(d.free), ...names(d.ads)]), rent: names(d.rent), buy: names(d.buy) };
 }
 
 export default {
-  async fetch(req) {
+  async fetch(req, env) {
     const url = new URL(req.url);
+    url.pathname = url.pathname.replace(/\/+/g, '/').replace(/(.)\/$/, '$1');
     try {
       if (url.pathname === '/list') return out(await list(url.searchParams.get('user')));
       if (url.pathname === '/film') return out(await film(url.searchParams.get('slug')));
+      if (url.pathname === '/watch') return out(await watch(url.searchParams.get('id'), url.searchParams.get('country'), env.TMDB_KEY));
       return out({ error: 'Not found.' }, 404);
     } catch (e) {
       return out({ error: e.message }, e.status || 500);
