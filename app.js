@@ -1,5 +1,5 @@
 // Paste your Cloudflare Worker address here (see README), e.g. 'https://reel-good.yourname.workers.dev'
-const WORKER_URL = 'https://reel-good.olivia-layton.workers.dev/';
+const WORKER_URL = 'https://reel-good.olivia-layton.workers.dev';
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
