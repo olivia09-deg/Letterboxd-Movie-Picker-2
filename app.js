@@ -118,7 +118,7 @@ function setMode(m) {
 /* ---------- movie night ---------- */
 async function api(path) {
   if (!WORKER_URL) throw new Error('Movie night needs the Worker address in app.js (see README).');
-  const r = await fetch(WORKER_URL + path);
+  const r = await fetch(WORKER_URL.trim().replace(/\/+$/, '') + path);
   const d = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(d.error || `Request failed (${r.status})`);
   return d;
