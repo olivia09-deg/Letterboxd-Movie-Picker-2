@@ -1,1 +1,376 @@
-{"user":"","updated":null,"films":[]}
+{
+ "user": "livl3",
+ "updated": "2026-11-04T09:46:28.318Z",
+ "films": [
+  {
+   "slug": "wuthering-heights-2026",
+   "title": "Wuthering Heights",
+   "year": 2026,
+   "genres": [
+    "History",
+    "Romance",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/9/6/9/1/1/tmdb/oGAYQOhfuXMh9Cpp4LNfzI5uDS3-1200-1200-675-675-crop-000000.jpg?v=e3febde0b8"
+  },
+  {
+   "slug": "vice-2018",
+   "title": "Vice",
+   "year": 2018,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/qt/5i/j2/qw/vice-1200-1200-675-675-crop-000000.jpg?v=a76f5f3710"
+  },
+  {
+   "slug": "monte-carlo",
+   "title": "Monte Carlo",
+   "year": 2011,
+   "genres": [
+    "Adventure",
+    "Comedy",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/ts/e1/hl/wf/eFHdnA8FwRrwSbAOj1JjlRsgxnk-1200-1200-675-675-crop-000000.jpg?v=dde5b8155c"
+  },
+  {
+   "slug": "clue",
+   "title": "Clue",
+   "year": 1985,
+   "genres": [
+    "Crime",
+    "Comedy",
+    "Mystery"
+   ],
+   "languages": [
+    "English",
+    "French"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/mk/mi/1k/v8/clue-1200-1200-675-675-crop-000000.jpg?v=3742386ac7"
+  },
+  {
+   "slug": "resident-evil-2026",
+   "title": "Resident Evil",
+   "year": 2026,
+   "genres": [
+    "Horror",
+    "Adventure",
+    "Science Fiction"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/c7/2d/gq/lu/resi-1200-1200-675-675-crop-000000.jpg?v=8d3221cbed"
+  },
+  {
+   "slug": "halloween-1978",
+   "title": "Halloween",
+   "year": 1978,
+   "genres": [
+    "Thriller",
+    "Horror"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/zg/ku/ln/58/halloween-1978-70-1200-1200-675-675-crop-000000.jpg?v=6a2ada978f"
+  },
+  {
+   "slug": "you-can-see-everything",
+   "title": "You Can See Everything",
+   "year": 2026,
+   "genres": [
+    "Documentary"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/wr/rf/xg/hl/IMG_2387-1200-1200-675-675-crop-000000.jpg?v=cfa3502c10"
+  },
+  {
+   "slug": "primetime-2026",
+   "title": "Primetime",
+   "year": 2026,
+   "genres": [
+    "Drama",
+    "Thriller"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/2/6/2/0/1/9/tmdb/mbnopFljGL3UIkSC22uQap4y5ah-1200-1200-675-675-crop-000000.jpg?v=d9a7b9f810"
+  },
+  {
+   "slug": "two-prosecutors",
+   "title": "Two Prosecutors",
+   "year": 2025,
+   "genres": [
+    "Thriller",
+    "Mystery",
+    "Drama",
+    "History"
+   ],
+   "languages": [
+    "Russian",
+    "Ukrainian"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/4/1/4/8/0/tmdb/3IZPY1mCgAKJTCvGVJv9ufyUz2f-1200-1200-675-675-crop-000000.jpg?v=9c57aca3b2"
+  },
+  {
+   "slug": "the-long-walk-2025",
+   "title": "The Long Walk",
+   "year": 2025,
+   "genres": [
+    "Horror",
+    "Science Fiction",
+    "Thriller"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/5/3/1/3/1/6/tmdb/zf7BQY4k5RNFI1sD4n9EVLnEG8m-1200-1200-675-675-crop-000000.jpg?v=4887771d4a"
+  },
+  {
+   "slug": "sacrifice-2025",
+   "title": "Sacrifice",
+   "year": 2025,
+   "genres": [
+    "Comedy",
+    "Action",
+    "Adventure"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/pm/12/ix/d4/3kYnfR6PN20bD4zshZfGza6jA6f-1200-1200-675-675-crop-000000.jpg?v=a7a9f90720"
+  },
+  {
+   "slug": "past-lives",
+   "title": "Past Lives",
+   "year": 2023,
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "languages": [
+    "English",
+    "Korean"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/w5/vf/ru/qm/past-lives-1200-1200-675-675-crop-000000.jpg?v=2ff888a5e1"
+  },
+  {
+   "slug": "pearl-2022",
+   "title": "Pearl",
+   "year": 2022,
+   "genres": [
+    "Drama",
+    "Horror"
+   ],
+   "languages": [
+    "English",
+    "German"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/q2/0n/4m/oh/pearl-1200-1200-675-675-crop-000000.jpg?v=0ed37f5964"
+  },
+  {
+   "slug": "whiplash-2014",
+   "title": "Whiplash",
+   "year": 2014,
+   "genres": [
+    "Drama",
+    "Music",
+    "Thriller"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/sk/f3/f1/b2/whiplash-1200-1200-675-675-crop-000000.jpg?v=771f1a019d"
+  },
+  {
+   "slug": "a-different-man",
+   "title": "A Different Man",
+   "year": 2024,
+   "genres": [
+    "Comedy",
+    "Drama"
+   ],
+   "languages": [
+    "English",
+    "Russian"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/gp/m2/rs/1m/ADifferentMan-1200-1200-675-675-crop-000000.jpg?v=0ad096bcad"
+  },
+  {
+   "slug": "we-live-in-time",
+   "title": "We Live in Time",
+   "year": 2024,
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/t4/au/4r/kk/we%20live%20in%20time-1200-1200-675-675-crop-000000.jpg?v=479f99bc8a"
+  },
+  {
+   "slug": "the-lovely-bones",
+   "title": "The Lovely Bones",
+   "year": 2009,
+   "genres": [
+    "Fantasy",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/10/dr/4v/kz/lovely-bones-1200-1200-675-675-crop-000000.jpg?v=f8d15ac7bd"
+  },
+  {
+   "slug": "nosferatu-2024",
+   "title": "Nosferatu",
+   "year": 2024,
+   "genres": [
+    "Fantasy",
+    "Horror"
+   ],
+   "languages": [
+    "English",
+    "German",
+    "Latin",
+    "Romanian",
+    "Russian"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/l3/72/mx/b8/vqToPEywI1QzUNd5bJceldmrWUf-1200-1200-675-675-crop-000000.jpg?v=cdd95a78e1"
+  },
+  {
+   "slug": "lee-2023",
+   "title": "Lee",
+   "year": 2023,
+   "genres": [
+    "History",
+    "Drama",
+    "War"
+   ],
+   "languages": [
+    "English",
+    "French"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/8o/13/yf/b8/zxF6LtaYPyBSk8N6ngdqGowhw2W-1200-1200-675-675-crop-000000.jpg?v=666c355267"
+  },
+  {
+   "slug": "the-piano-teacher",
+   "title": "The Piano Teacher",
+   "year": 2001,
+   "genres": [
+    "Romance",
+    "Drama"
+   ],
+   "languages": [
+    "French",
+    "German"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/ee/6b/t9/v4/the-piano-teacher-1200-1200-675-675-crop-000000.jpg?v=dae4706be7"
+  },
+  {
+   "slug": "wild-things",
+   "title": "Wild Things",
+   "year": 1998,
+   "genres": [
+    "Thriller",
+    "Mystery",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/jd/ca/a6/a0/wild-things-1200-1200-675-675-crop-000000.jpg?v=b1096a4366"
+  },
+  {
+   "slug": "mermaids",
+   "title": "Mermaids",
+   "year": 1990,
+   "genres": [
+    "Drama",
+    "Romance",
+    "Comedy"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/7o/tf/pt/bt/mermaids-60-1200-1200-675-675-crop-000000.jpg?v=9771f4fc87"
+  },
+  {
+   "slug": "carrie-1976",
+   "title": "Carrie",
+   "year": 1976,
+   "genres": [
+    "Horror",
+    "Thriller"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/oy/wp/1g/b5/carrie-1200-1200-675-675-crop-000000.jpg?v=358988d90c"
+  },
+  {
+   "slug": "the-social-network",
+   "title": "The Social Network",
+   "year": 2010,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/dr/ty/49/rl/the-social-network-2010-1200-1200-675-675-crop-000000.jpg?v=cbacd98bfa"
+  },
+  {
+   "slug": "the-virgin-suicides",
+   "title": "The Virgin Suicides",
+   "year": 1999,
+   "genres": [
+    "Romance",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/6y/xk/bi/nf/the-virgin-suicides-70-1200-1200-675-675-crop-000000.jpg?v=69bb61a9c3"
+  },
+  {
+   "slug": "late-night-with-the-devil",
+   "title": "Late Night with the Devil",
+   "year": 2023,
+   "genres": [
+    "Horror"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/31/0y/ek/6r/1q6Cx3RqP2Tq7WHGr32hKqrWafm-1200-1200-675-675-crop-000000.jpg?v=274c1b31bb"
+  },
+  {
+   "slug": "heretic-2024",
+   "title": "Heretic",
+   "year": 2024,
+   "genres": [
+    "Thriller",
+    "Horror"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/iv/y4/vx/uh/Heretic-1200-1200-675-675-crop-000000.jpg?v=d6f1534486"
+  }
+ ]
+}
