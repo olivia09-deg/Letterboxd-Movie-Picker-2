@@ -1,7 +1,602 @@
 {
  "user": "livl3",
- "updated": "2026-11-04T09:46:28.318Z",
+ "updated": "2026-11-04T11:12:36.747Z",
  "films": [
+  {
+   "slug": "life-2015",
+   "title": "Life",
+   "year": 2015,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/gr/rp/p8/zh/life-2015-1200-1200-675-675-crop-000000.jpg?v=f50fd11304"
+  },
+  {
+   "slug": "water-for-elephants",
+   "title": "Water for Elephants",
+   "year": 2011,
+   "genres": [
+    "Romance",
+    "Drama"
+   ],
+   "languages": [
+    "English",
+    "Polish"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/66/sg/1o/y8/water-for-elephants-1200-1200-675-675-crop-000000.jpg?v=47ddfc2c82"
+  },
+  {
+   "slug": "high-life-2018",
+   "title": "High Life",
+   "year": 2018,
+   "genres": [
+    "Science Fiction",
+    "Drama",
+    "Mystery"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/1o/hd/06/4f/high-life-1200-1200-675-675-crop-000000.jpg?v=968af4955c"
+  },
+  {
+   "slug": "the-batman",
+   "title": "The Batman",
+   "year": 2022,
+   "genres": [
+    "Crime",
+    "Mystery",
+    "Thriller"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/h1/on/1p/hg/the-batman-1200-1200-675-675-crop-000000.jpg?v=1f59052f03"
+  },
+  {
+   "slug": "tenet",
+   "title": "Tenet",
+   "year": 2020,
+   "genres": [
+    "Science Fiction",
+    "Action",
+    "Thriller"
+   ],
+   "languages": [
+    "English",
+    "Estonian",
+    "Russian",
+    "Ukrainian"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/5m/00/ad/bl/tenet-1200-1200-675-675-crop-000000.jpg?v=2f1c9ecacd"
+  },
+  {
+   "slug": "maps-to-the-stars",
+   "title": "Maps to the Stars",
+   "year": 2014,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/fc/ps/lj/7p/maps-to-the-stars-1200-1200-675-675-crop-000000.jpg?v=d26b44a879"
+  },
+  {
+   "slug": "dune-part-two",
+   "title": "Dune: Part Two",
+   "year": 2024,
+   "genres": [
+    "Adventure",
+    "Science Fiction"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/qp/uv/i4/8b/l6b9YZEokZl1nt7q0pprrur6btG-1200-1200-675-675-crop-000000.jpg?v=ed21d71137"
+  },
+  {
+   "slug": "dune-2021",
+   "title": "Dune",
+   "year": 2021,
+   "genres": [
+    "Science Fiction",
+    "Adventure"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/a6/8b/5j/zk/dune-2021a-1200-1200-675-675-crop-000000.jpg?v=7422445327"
+  },
+  {
+   "slug": "dune-part-three",
+   "title": "Dune: Part Three",
+   "year": 2026,
+   "genres": [
+    "Science Fiction",
+    "Adventure"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/0/5/7/4/6/1/tmdb/fgISFNlz8ZBplHa5cNXDsPe6VYK-1200-1200-675-675-crop-000000.jpg?v=36c20f30db"
+  },
+  {
+   "slug": "girl-interrupted",
+   "title": "Girl, Interrupted",
+   "year": 1999,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/av/w8/ds/jl/girl-interrupted-1200-1200-675-675-crop-000000.jpg?v=282d5c03a1"
+  },
+  {
+   "slug": "angels-in-america",
+   "title": "Angels in America",
+   "year": 2003,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "English",
+    "Hebrew (modern)",
+    "Yiddish"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/xj/x3/t9/gf/angels-1200-1200-675-675-crop-000000.jpg?v=12b63cd202"
+  },
+  {
+   "slug": "merata-how-mum-decolonised-the-screen",
+   "title": "Merata: How Mum Decolonised the Screen",
+   "year": 2018,
+   "genres": [
+    "Documentary"
+   ],
+   "languages": [
+    "English",
+    "Māori"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/39/nn/nr/9k/Merata-1200-1200-675-675-crop-000000.jpg?v=78c6eaff6a"
+  },
+  {
+   "slug": "portrait-of-a-lady-on-fire",
+   "title": "Portrait of a Lady on Fire",
+   "year": 2019,
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "languages": [
+    "French",
+    "Italian"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/6s/c1/hx/il/portrait-of-lady-on-fire-1200-1200-675-675-crop-000000.jpg?v=9e65e80a13"
+  },
+  {
+   "slug": "death-becomes-her",
+   "title": "Death Becomes Her",
+   "year": 1992,
+   "genres": [
+    "Comedy",
+    "Fantasy",
+    "Horror"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/6g/15/71/7y/death-becomes-her-1200-1200-675-675-crop-000000.jpg?v=088721bdbe"
+  },
+  {
+   "slug": "how-to-make-millions-before-grandma-dies",
+   "title": "How to Make Millions Before Grandma Dies",
+   "year": 2024,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "Thai"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/vl/w6/6z/zl/k6tpQCQfBHRhzfUhp9Sb51SUikK-1200-1200-675-675-crop-000000.jpg?v=1f5dfe6786"
+  },
+  {
+   "slug": "the-lobster",
+   "title": "The Lobster",
+   "year": 2015,
+   "genres": [
+    "Romance",
+    "Drama",
+    "Comedy"
+   ],
+   "languages": [
+    "English",
+    "French",
+    "Greek (modern)"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/gc/i6/0a/0z/the-lobster-1200-1200-675-675-crop-000000.jpg?v=78b968896e"
+  },
+  {
+   "slug": "the-killing-of-a-sacred-deer",
+   "title": "The Killing of a Sacred Deer",
+   "year": 2017,
+   "genres": [
+    "Mystery",
+    "Drama",
+    "Thriller"
+   ],
+   "languages": [
+    "English",
+    "French"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/wr/lp/8l/31/the-killing-of-a-sacred-deer-1200-1200-675-675-crop-000000.jpg?v=6186b664d6"
+  },
+  {
+   "slug": "the-lighthouse-2019",
+   "title": "The Lighthouse",
+   "year": 2019,
+   "genres": [
+    "Thriller",
+    "Fantasy",
+    "Horror",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/q3/nd/ae/zn/the-lighthouse-1200-1200-675-675-crop-000000.jpg?v=d3734cdd04"
+  },
+  {
+   "slug": "invasion-of-the-body-snatchers",
+   "title": "Invasion of the Body Snatchers",
+   "year": 1956,
+   "genres": [
+    "Thriller",
+    "Horror",
+    "Science Fiction"
+   ],
+   "languages": [
+    "English",
+    "Danish"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/yp/jx/ks/h1/invasion-of-the-body-snatchers-1200-1200-675-675-crop-000000.jpg?v=ee1f9775c6"
+  },
+  {
+   "slug": "the-texas-chain-saw-massacre",
+   "title": "The Texas Chain Saw Massacre",
+   "year": 1974,
+   "genres": [
+    "Horror"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/e4/j2/1q/2h/the-texas-chain-saw-massacre-1200-1200-675-675-crop-000000.jpg?v=dbceb0d20b"
+  },
+  {
+   "slug": "inside-2007",
+   "title": "Inside",
+   "year": 2007,
+   "genres": [
+    "Horror"
+   ],
+   "languages": [
+    "French"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/eo/cv/rl/bd/inside-1200-1200-675-675-crop-000000.jpg?v=6291e97fcc"
+  },
+  {
+   "slug": "the-odyssey-2026",
+   "title": "The Odyssey",
+   "year": 2026,
+   "genres": [
+    "Adventure",
+    "Action",
+    "Fantasy"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/vn/7k/d6/d7/odyssey-1200-1200-675-675-crop-000000.jpg?v=9f3eb79026"
+  },
+  {
+   "slug": "i-want-your-sex",
+   "title": "I Want Your Sex",
+   "year": 2026,
+   "genres": [
+    "Comedy"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/0/9/5/4/tmdb/qNZm0m1WWjYx8UVyrEkEwN4dgyl-1200-1200-675-675-crop-000000.jpg?v=ad8344b874"
+  },
+  {
+   "slug": "teenage-sex-and-death-at-camp-miasma",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "year": 2026,
+   "genres": [
+    "Horror",
+    "Comedy",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/7m/h0/iq/dx/5dbLRlAeIh4U3hyj4i4S4shv9AW-1200-1200-675-675-crop-000000.jpg?v=4f87c8fe02"
+  },
+  {
+   "slug": "hokum",
+   "title": "Hokum",
+   "year": 2026,
+   "genres": [
+    "Horror",
+    "Thriller"
+   ],
+   "languages": [
+    "English",
+    "Spanish"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/3/0/8/5/8/7/tmdb/ljpo2yYlsIDzuI4Urbe3TgexntI-1200-1200-675-675-crop-000000.jpg?v=19f0f67f88"
+  },
+  {
+   "slug": "the-sixth-sense",
+   "title": "The Sixth Sense",
+   "year": 1999,
+   "genres": [
+    "Thriller",
+    "Mystery",
+    "Horror",
+    "Drama"
+   ],
+   "languages": [
+    "English",
+    "Latin",
+    "Spanish"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/bn/hc/0u/en/sixthsense-1200-1200-675-675-crop-000000.jpg?v=96b2ba2a1e"
+  },
+  {
+   "slug": "parasite-2019",
+   "title": "Parasite",
+   "year": 2019,
+   "genres": [
+    "Thriller",
+    "Comedy",
+    "Drama"
+   ],
+   "languages": [
+    "Korean",
+    "English",
+    "German"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/oi/ha/78/z8/parasite-1200-1200-675-675-crop-000000.jpg?v=03b9da4410"
+  },
+  {
+   "slug": "last-night-in-soho",
+   "title": "Last Night in Soho",
+   "year": 2021,
+   "genres": [
+    "Horror",
+    "Mystery",
+    "Thriller"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/in/lt/lr/1o/last-night-in-soho-1200-1200-675-675-crop-000000.jpg?v=1245b54e2b"
+  },
+  {
+   "slug": "breakfast-at-tiffanys",
+   "title": "Breakfast at Tiffany's",
+   "year": 1961,
+   "genres": [
+    "Romance",
+    "Drama",
+    "Comedy"
+   ],
+   "languages": [
+    "English",
+    "Portuguese"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/jm/wn/yu/28/breakfast-at-tiffanys-1200-1200-675-675-crop-000000.jpg?v=585e14bb37"
+  },
+  {
+   "slug": "bones-and-all",
+   "title": "Bones and All",
+   "year": 2022,
+   "genres": [
+    "Horror",
+    "Drama",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/t2/l6/qv/bg/bones4-1200-1200-675-675-crop-000000.jpg?v=27534b7249"
+  },
+  {
+   "slug": "lolita",
+   "title": "Lolita",
+   "year": 1962,
+   "genres": [
+    "Drama",
+    "Comedy",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/of/ca/l9/4a/lolita-1200-1200-675-675-crop-000000.jpg?v=953162bb80"
+  },
+  {
+   "slug": "a-room-with-a-view",
+   "title": "A Room with a View",
+   "year": 1986,
+   "genres": [
+    "Romance",
+    "Drama"
+   ],
+   "languages": [
+    "English",
+    "Italian"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/tu/zn/fy/n9/a-room-with-a-view-1200-1200-675-675-crop-000000.jpg?v=6e19d80d9b"
+  },
+  {
+   "slug": "basic-instinct",
+   "title": "Basic Instinct",
+   "year": 1992,
+   "genres": [
+    "Thriller",
+    "Mystery"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/41/5o/nh/nc/basic-instinct-1200-1200-675-675-crop-000000.jpg?v=45209645e4"
+  },
+  {
+   "slug": "the-witch-2015",
+   "title": "The Witch",
+   "year": 2015,
+   "genres": [
+    "Mystery",
+    "Horror",
+    "Fantasy"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/ii/1v/z8/lk/the-witch-1200-1200-675-675-crop-000000.jpg?v=06f9adfe9a"
+  },
+  {
+   "slug": "buffy-the-vampire-slayer",
+   "title": "Buffy the Vampire Slayer",
+   "year": 1992,
+   "genres": [
+    "Comedy",
+    "Horror",
+    "Action"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/as/eo/9v/ga/buffy-vampire-slayer-1200-1200-675-675-crop-000000.jpg?v=00528f67c5"
+  },
+  {
+   "slug": "the-importance-of-being-earnest-2002",
+   "title": "The Importance of Being Earnest",
+   "year": 2002,
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "History"
+   ],
+   "languages": [
+    "English",
+    "German"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/gi/jo/cu/zg/74RvBYAo2GzdVuY4Tw7Y0lecKYq-1200-1200-675-675-crop-000000.jpg?v=7fef5f2def"
+  },
+  {
+   "slug": "submarine",
+   "title": "Submarine",
+   "year": 2010,
+   "genres": [
+    "Drama",
+    "Comedy",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/qz/q8/1o/vw/submarine-50-1200-1200-675-675-crop-000000.jpg?v=4322134aa7"
+  },
+  {
+   "slug": "ingrid-goes-west",
+   "title": "Ingrid Goes West",
+   "year": 2017,
+   "genres": [
+    "Comedy",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/99/jj/j1/2k/ingrid-goes-west-1200-1200-675-675-crop-000000.jpg?v=d64c7ef877"
+  },
+  {
+   "slug": "the-neon-demon",
+   "title": "The Neon Demon",
+   "year": 2016,
+   "genres": [
+    "Horror",
+    "Thriller"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/md/nu/67/64/the-neon-demon-1200-1200-675-675-crop-000000.jpg?v=e06205543d"
+  },
+  {
+   "slug": "pillion-2025",
+   "title": "Pillion",
+   "year": 2025,
+   "genres": [
+    "Drama",
+    "Romance",
+    "Comedy"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/0/4/3/3/tmdb/6NjfwjZWnFHRwpObuDpDDk4168C-1200-1200-675-675-crop-000000.jpg?v=7be5062d0b"
+  },
+  {
+   "slug": "the-testament-of-ann-lee",
+   "title": "The Testament of Ann Lee",
+   "year": 2025,
+   "genres": [
+    "Music",
+    "History",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/rk/tp/tu/re/khfhhq3FhF6JxFB0yzbrsSzhAs5-1200-1200-675-675-crop-000000.jpg?v=dd53d8ead2"
+  },
+  {
+   "slug": "failure-to-launch",
+   "title": "Failure to Launch",
+   "year": 2006,
+   "genres": [
+    "Comedy",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/4v/f6/js/fm/failure%20to%20launch-1200-1200-675-675-crop-000000.jpg?v=5083df80b2"
+  },
+  {
+   "slug": "friendship-2024",
+   "title": "Friendship",
+   "year": 2024,
+   "genres": [
+    "Comedy",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/2/2/6/9/1/tmdb/miayZ4OPpHgPATEqnWoLAvEKmxn-1200-1200-675-675-crop-000000.jpg?v=2a46626c37"
+  },
   {
    "slug": "wuthering-heights-2026",
    "title": "Wuthering Heights",
