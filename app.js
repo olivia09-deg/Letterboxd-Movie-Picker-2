@@ -1,6 +1,14 @@
+// Paste your Cloudflare Worker address here (see README), e.g. 'https://reel-good.yourname.workers.dev'
+const WORKER_URL = '';
+
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-let films = [], last = null, busy = false;
+const nice = (slug) => slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+const clean = (s) => s.trim().replace(/^.*letterboxd\.com\//i, '').replace(/[/?#].*$/, '');
+const say = (t) => { $('#status').textContent = t; };
+const HINT = 'Set your filters, then press Pick a film.';
+
+let films = [], soloFilms = [], soloMap = new Map(), sharedFilms = [], last = null, busy = false;
 const genres = new Set();
 
 function filtered() {
@@ -19,8 +27,7 @@ function count(key) {
 }
 
 function updateCount() {
-  const n = filtered().length;
-  $('#count').textContent = `${n} of ${films.length} films match`;
+  $('#count').textContent = `${filtered().length} of ${films.length} films match`;
 }
 
 function show(f) {
@@ -58,10 +65,8 @@ function pick() {
 
 function build() {
   const years = films.map((f) => f.year).filter(Boolean);
-  if (years.length) {
-    $('#from').placeholder = Math.min(...years);
-    $('#to').placeholder = Math.max(...years);
-  }
+  $('#from').placeholder = years.length ? Math.min(...years) : 'From';
+  $('#to').placeholder = years.length ? Math.max(...years) : 'To';
   $('#genres').innerHTML = count('genres').map(([g, n]) =>
     `<button type="button" class="chip" aria-pressed="false" data-g="${esc(g)}">${esc(g)} <small>${n}</small></button>`).join('');
   $('#lang').innerHTML = '<option value="">Any language</option>' +
@@ -69,16 +74,98 @@ function build() {
   updateCount();
 }
 
+// Swap in a new list of films (own watchlist or shared list) and reset the page.
+function setFilms(list, hint = HINT) {
+  films = list; last = null; genres.clear();
+  $('#from').value = $('#to').value = '';
+  $('#stage').classList.remove('on');
+  $('#open').hidden = true;
+  $('#hint').textContent = hint;
+  $('#pick').textContent = 'Pick a film';
+  $('#pick').disabled = !films.length;
+  build();
+}
+
+function setMode(m) {
+  $('#m-solo').setAttribute('aria-pressed', m === 'solo');
+  $('#m-duo').setAttribute('aria-pressed', m === 'duo');
+  $('#duo').hidden = m !== 'duo';
+  if (m === 'solo') setFilms(soloFilms);
+  else setFilms(sharedFilms, sharedFilms.length ? HINT : 'Enter two usernames and compare their watchlists.');
+}
+
+/* ---------- movie night ---------- */
+async function api(path) {
+  if (!WORKER_URL) throw new Error('Movie night needs the Worker address in app.js (see README).');
+  const r = await fetch(WORKER_URL + path);
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(d.error || `Request failed (${r.status})`);
+  return d;
+}
+
+function known(slug) {
+  if (soloMap.has(slug)) return soloMap.get(slug);
+  try { const c = localStorage.getItem('rg:' + slug); if (c) return JSON.parse(c); } catch {}
+  return null;
+}
+
+async function details(slugs) {
+  const out = []; let i = 0, done = 0;
+  async function run() {
+    while (i < slugs.length) {
+      const slug = slugs[i++];
+      let f = known(slug);
+      if (!f) {
+        try {
+          f = await api('/film?slug=' + encodeURIComponent(slug));
+          try { localStorage.setItem('rg:' + slug, JSON.stringify(f)); } catch {}
+        } catch { f = { slug, title: nice(slug), year: null, genres: [], languages: [], image: null }; }
+      }
+      out.push(f);
+      say(`Loading film details… ${++done}/${slugs.length}`);
+    }
+  }
+  await Promise.all([run(), run(), run(), run()]);
+  return out;
+}
+
+async function compare() {
+  const a = clean($('#userA').value), b = clean($('#userB').value);
+  if (!a || !b) { say('Enter both usernames.'); return; }
+  if (a.toLowerCase() === b.toLowerCase()) { say('Enter two different usernames.'); return; }
+  $('#compare').disabled = true;
+  say('Reading both watchlists…');
+  try {
+    const [A, B] = await Promise.all([api('/list?user=' + encodeURIComponent(a)), api('/list?user=' + encodeURIComponent(b))]);
+    const inB = new Set(B.slugs);
+    const shared = A.slugs.filter((s) => inB.has(s));
+    if (!shared.length) {
+      sharedFilms = [];
+      setFilms([], 'No films in common.');
+      say(`${a} has ${A.slugs.length} films and ${b} has ${B.slugs.length}, but none overlap.`);
+      return;
+    }
+    sharedFilms = await details(shared);
+    setFilms(sharedFilms);
+    say(`${shared.length} films are on both watchlists (${a}: ${A.slugs.length}, ${b}: ${B.slugs.length}).`);
+  } catch (e) {
+    say(e.message);
+  } finally {
+    $('#compare').disabled = false;
+  }
+}
+
+/* ---------- own watchlist ---------- */
 async function load() {
   try {
     const r = await fetch('data/watchlist.json?t=' + Date.now(), { cache: 'no-store' });
     if (!r.ok) throw new Error();
     const d = await r.json();
-    films = (d.films || []).map((f) => ({ ...f, genres: f.genres || [], languages: f.languages || [] }));
-    if (!films.length) { $('#hint').textContent = 'The watchlist file is empty. Run the “Update watchlist” action once (see README).'; return; }
+    soloFilms = (d.films || []).map((f) => ({ ...f, genres: f.genres || [], languages: f.languages || [] }));
+    soloMap = new Map(soloFilms.filter((f) => !f.incomplete).map((f) => [f.slug, f]));
     if (d.updated) $('#updated').textContent = 'Watchlist updated ' + new Date(d.updated).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
-    build();
-    $('#pick').disabled = false;
+    if (!soloFilms.length) $('#hint').textContent = 'The watchlist file is empty. Run the “Update watchlist” action once (see README).';
+    else if ($('#m-solo').getAttribute('aria-pressed') === 'true') setFilms(soloFilms);
   } catch {
     $('#hint').textContent = 'Could not load data/watchlist.json.';
   }
@@ -99,4 +186,8 @@ $('#clear').addEventListener('click', () => {
   updateCount();
 });
 $('#pick').addEventListener('click', pick);
+$('#m-solo').addEventListener('click', () => setMode('solo'));
+$('#m-duo').addEventListener('click', () => setMode('duo'));
+$('#compare').addEventListener('click', compare);
+['#userA', '#userB'].forEach((s) => $(s).addEventListener('keydown', (e) => { if (e.key === 'Enter') compare(); }));
 load();
