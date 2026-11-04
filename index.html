@@ -3,86 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>What to watch</title>
+<title>reel good</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0e1d22;--panel:#16303a;--line:#2b4a54;--ink:#e9f2ef;--mute:#93aeab;--amber:#ffb23e;
- font-family:"Bricolage Grotesque",system-ui,sans-serif}
+:root{--bg:#14181c;--panel:#1f262e;--line:#2c3440;--ink:#ffffff;--mute:#99aabb;
+ --orange:#ff8000;--green:#00e054;--blue:#40bcf4;
+ font-family:"DM Sans",system-ui,sans-serif}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);line-height:1.5}
-.wrap{display:grid;grid-template-columns:300px 1fr;gap:40px;max-width:1100px;margin:0 auto;padding:40px 24px}
-h1{font-size:1.6rem;font-weight:800;margin:0 0 4px;letter-spacing:-.01em}
-.sub{color:var(--mute);margin:0 0 28px;font-size:.95rem}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px 56px}
+
+/* heading */
+.brand{display:flex;align-items:center;gap:18px;padding:24px 0 20px;border-bottom:1px solid var(--line)}
+.mark{width:44px;height:44px;border-radius:12px;background:var(--line);display:grid;place-items:center}
+.mark svg{width:26px;height:26px}
+.word{font-size:1.6rem;font-weight:700;letter-spacing:-.01em}
+.eyebrow{font-family:"DM Mono",monospace;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin:56px 0 18px}
+h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(3rem,9.5vw,6.8rem);line-height:.95;letter-spacing:-.035em;margin:0 0 56px}
+h1 span{display:block;color:var(--green)}
+
+/* picker */
+.main{display:grid;grid-template-columns:300px 1fr;gap:40px}
 label,.lbl{display:block;font-weight:600;font-size:.9rem;margin:22px 0 8px}
+.main section:first-child .lbl:first-child{margin-top:0}
 .years{display:flex;gap:8px;align-items:center;color:var(--mute)}
 input,select{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:9px 10px;width:100%}
 input::placeholder{color:var(--mute)}
 #genres{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font:inherit;font-size:.85rem;color:var(--ink);background:none;border:1px solid var(--line);border-radius:99px;padding:4px 11px;cursor:pointer}
 .chip small{color:var(--mute)}
-.chip[aria-pressed=true]{background:var(--amber);border-color:var(--amber);color:#1b1407}
-.chip[aria-pressed=true] small{color:#5a4217}
-button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.chip[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#0b1f12}
+.chip[aria-pressed=true] small{color:#1d5a35}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .row{display:flex;align-items:center;justify-content:space-between;margin-top:26px;color:var(--mute);font-size:.9rem}
-#clear{font:inherit;background:none;border:0;color:var(--ink);text-decoration:underline;cursor:pointer;padding:0}
-#pick{font:inherit;font-weight:800;font-size:1.05rem;width:100%;margin-top:16px;padding:14px;border:0;border-radius:8px;background:var(--amber);color:#1b1407;cursor:pointer}
+#clear{font:inherit;background:none;border:0;color:var(--blue);text-decoration:underline;cursor:pointer;padding:0}
+#pick{font:inherit;font-weight:700;font-size:1.05rem;width:100%;margin-top:16px;padding:14px;border:0;border-radius:8px;background:var(--orange);color:#1a0d00;cursor:pointer}
+#pick:hover:not(:disabled){filter:brightness(1.1)}
 #pick:disabled{opacity:.4;cursor:default}
 #stage{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--panel);border:1px solid var(--line);display:flex;align-items:flex-end}
 #still{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .4s}
 #stage.on #still{opacity:1}
 #stage.rolling #still{opacity:.25}
-#shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,18,22,.94) 8%,rgba(8,18,22,.1) 70%);opacity:0}
+#shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,24,28,.95) 8%,rgba(20,24,28,.1) 70%);opacity:0}
 #stage.on #shade{opacity:1}
-#hint{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--mute)}
+#hint{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--mute);margin:0}
 #stage.on #hint{display:none}
 #info{position:relative;padding:28px;width:100%;display:none}
 #stage.on #info{display:block}
-#title{font-size:clamp(1.8rem,5vw,3.4rem);font-weight:800;line-height:1.05;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+#title{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(2rem,5vw,3.6rem);line-height:1;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
 #meta{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--mute);font-size:.95rem}
-#meta span:first-child{color:var(--amber);font-weight:600}
-#open{display:inline-block;margin-top:14px;color:var(--ink);font-weight:600}
+#meta span:first-child{color:var(--orange);font-weight:600}
+#open{display:inline-block;margin-top:14px;color:var(--blue);font-weight:600}
 #updated{margin-top:12px;color:var(--mute);font-size:.8rem}
-@media(max-width:800px){.wrap{grid-template-columns:1fr;gap:28px;padding:24px 16px}#stage{aspect-ratio:4/3}}
+@media(max-width:800px){.wrap{padding:0 16px 40px}.main{grid-template-columns:1fr;gap:28px}#stage{aspect-ratio:4/3}.eyebrow{margin-top:40px}h1{margin-bottom:36px}}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <section aria-label="Filters">
-    <h1>What to watch</h1>
-    <p class="sub">A random pick from your Letterboxd watchlist.</p>
-
-    <span class="lbl">Release year</span>
-    <div class="years">
-      <input id="from" type="number" inputmode="numeric" aria-label="From year" placeholder="From">
-      <span>to</span>
-      <input id="to" type="number" inputmode="numeric" aria-label="To year" placeholder="To">
-    </div>
-
-    <span class="lbl">Genre <span style="font-weight:400;color:var(--mute)">(any of the selected)</span></span>
-    <div id="genres"></div>
-
-    <label for="lang">Language</label>
-    <select id="lang"><option value="">Any language</option></select>
-
-    <div class="row"><span id="count" aria-live="polite">Loading…</span><button id="clear" type="button">Clear filters</button></div>
-    <button id="pick" type="button" disabled>Pick a film</button>
-    <div id="updated"></div>
-  </section>
-
-  <section aria-label="Your pick">
-    <div id="stage">
-      <div id="still"></div><div id="shade"></div>
-      <p id="hint">Set your filters, then press Pick a film.</p>
-      <div id="info">
-        <h2 id="title"></h2>
-        <div id="meta"></div>
-        <a id="open" href="#" target="_blank" rel="noopener" hidden>Open on Letterboxd</a>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round">
+          <line x1="12" y1="4.5" x2="12" y2="19.5" stroke="#ff8000"/>
+          <line x1="5.5" y1="8.25" x2="18.5" y2="15.75" stroke="#00e054"/>
+          <line x1="5.5" y1="15.75" x2="18.5" y2="8.25" stroke="#40bcf4"/>
+        </svg>
       </div>
+      <span class="word">reel good</span>
     </div>
-  </section>
-</main>
+    <p class="eyebrow">The movie night shortcut</p>
+    <h1>Less scrolling.<span>More watching.</span></h1>
+  </header>
+
+  <main class="main">
+    <section aria-label="Filters">
+      <span class="lbl">Release year</span>
+      <div class="years">
+        <input id="from" type="number" inputmode="numeric" aria-label="From year" placeholder="From">
+        <span>to</span>
+        <input id="to" type="number" inputmode="numeric" aria-label="To year" placeholder="To">
+      </div>
+
+      <span class="lbl">Genre <span style="font-weight:400;color:var(--mute)">(any of the selected)</span></span>
+      <div id="genres"></div>
+
+      <label for="lang">Language</label>
+      <select id="lang"><option value="">Any language</option></select>
+
+      <div class="row"><span id="count" aria-live="polite">Loading…</span><button id="clear" type="button">Clear filters</button></div>
+      <button id="pick" type="button" disabled>Pick a film</button>
+      <div id="updated"></div>
+    </section>
+
+    <section aria-label="Your pick">
+      <div id="stage">
+        <div id="still"></div><div id="shade"></div>
+        <p id="hint">Set your filters, then press Pick a film.</p>
+        <div id="info">
+          <h2 id="title"></h2>
+          <div id="meta"></div>
+          <a id="open" href="#" target="_blank" rel="noopener" hidden>Open on Letterboxd</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
 <script src="app.js"></script>
 </body>
 </html>
