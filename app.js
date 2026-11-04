@@ -1,5 +1,5 @@
 // Paste your Cloudflare Worker address here (see README), e.g. 'https://reel-good.yourname.workers.dev'
-const WORKER_URL = 'https://reel-good.olivia-layton.workers.dev';
+const WORKER_URL = 'https://reel-good.olivia-layton.workers.dev/';
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -10,10 +10,22 @@ const HINT = 'Set your filters, then press Pick a film.';
 
 let films = [], soloFilms = [], soloMap = new Map(), sharedFilms = [], last = null, busy = false;
 const genres = new Set();
+let hidden = new Set();
+try { hidden = new Set(JSON.parse(localStorage.getItem('rg:hidden') || '[]')); } catch {}
+const saveHidden = () => { try { localStorage.setItem('rg:hidden', JSON.stringify([...hidden])); } catch {} };
+const COUNTRIES = { AU: 'Australia', AT: 'Austria', BE: 'Belgium', BR: 'Brazil', CA: 'Canada', CZ: 'Czechia', DK: 'Denmark', FI: 'Finland', FR: 'France', DE: 'Germany', IN: 'India', IE: 'Ireland', IT: 'Italy', JP: 'Japan', MX: 'Mexico', NL: 'Netherlands', NZ: 'New Zealand', NO: 'Norway', PL: 'Poland', PT: 'Portugal', ZA: 'South Africa', ES: 'Spain', SE: 'Sweden', CH: 'Switzerland', GB: 'United Kingdom', US: 'United States' };
+let country = 'US';
+try {
+  const saved = localStorage.getItem('rg:country');
+  const guess = ((navigator.language || '').split('-')[1] || '').toUpperCase();
+  country = COUNTRIES[saved] ? saved : COUNTRIES[guess] ? guess : 'US';
+} catch {}
 
 function filtered() {
-  const from = +$('#from').value || null, to = +$('#to').value || null, lang = $('#lang').value;
+  const from = +$('#from').value || null, to = +$('#to').value || null, lang = $('#lang').value, len = $('#len').value;
   return films.filter((f) =>
+    !hidden.has(f.slug) &&
+    (!len || (f.runtime && (len === 'o150' ? f.runtime > 150 : f.runtime <= +len.slice(1)))) &&
     (!(from || to) || f.year) &&
     (!from || f.year >= from) && (!to || f.year <= to) &&
     (!lang || f.languages.includes(lang)) &&
@@ -28,6 +40,8 @@ function count(key) {
 
 function updateCount() {
   $('#count').textContent = `${filtered().length} of ${films.length} films match`;
+  $('#unhide').hidden = !hidden.size;
+  $('#unhide').textContent = `Bring back ${hidden.size} hidden film${hidden.size === 1 ? '' : 's'}`;
 }
 
 function show(f) {
@@ -38,6 +52,9 @@ function show(f) {
     .filter(Boolean).map((t) => `<span>${esc(t)}</span>`).join('');
   $('#open').href = `https://letterboxd.com/film/${f.slug}/`;
   $('#open').hidden = false;
+  $('#skip').hidden = false;
+  $('#where').textContent = '';
+  loadWhere(f);
 }
 
 function pick() {
@@ -56,6 +73,8 @@ function pick() {
   busy = true;
   $('#stage').classList.add('on', 'rolling');
   $('#open').hidden = true;
+  $('#skip').hidden = true;
+  $('#where').textContent = '';
   let i = 0;
   const t = setInterval(() => {
     if (++i > 12) { clearInterval(t); busy = false; $('#stage').classList.remove('rolling'); show(w); return; }
@@ -77,7 +96,9 @@ function build() {
 // Swap in a new list of films (own watchlist or shared list) and reset the page.
 function setFilms(list, hint = HINT) {
   films = list; last = null; genres.clear();
-  $('#from').value = $('#to').value = '';
+  $('#from').value = $('#to').value = $('#len').value = '';
+  $('#skip').hidden = true;
+  $('#where').textContent = '';
   $('#stage').classList.remove('on');
   $('#open').hidden = true;
   $('#hint').textContent = hint;
@@ -104,8 +125,9 @@ async function api(path) {
 }
 
 function known(slug) {
-  if (soloMap.has(slug)) return soloMap.get(slug);
-  try { const c = localStorage.getItem('rg:' + slug); if (c) return JSON.parse(c); } catch {}
+  const s = soloMap.get(slug);
+  if (s && 'tmdb' in s && 'runtime' in s) return s;
+  try { const c = localStorage.getItem('rg2:' + slug); if (c) return JSON.parse(c); } catch {}
   return null;
 }
 
@@ -118,8 +140,8 @@ async function details(slugs) {
       if (!f) {
         try {
           f = await api('/film?slug=' + encodeURIComponent(slug));
-          try { localStorage.setItem('rg:' + slug, JSON.stringify(f)); } catch {}
-        } catch { f = { slug, title: nice(slug), year: null, genres: [], languages: [], image: null }; }
+          try { localStorage.setItem('rg2:' + slug, JSON.stringify(f)); } catch {}
+        } catch { f = { slug, title: nice(slug), year: null, genres: [], languages: [], image: null, runtime: null, tmdb: null }; }
       }
       out.push(f);
       say(`Loading film details… ${++done}/${slugs.length}`);
@@ -178,11 +200,11 @@ $('#genres').addEventListener('click', (e) => {
   on ? genres.add(b.dataset.g) : genres.delete(b.dataset.g);
   updateCount();
 });
-['#from', '#to', '#lang'].forEach((s) => $(s).addEventListener('input', updateCount));
+['#from', '#to', '#lang', '#len'].forEach((s) => $(s).addEventListener('input', updateCount));
 $('#clear').addEventListener('click', () => {
   genres.clear();
   document.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', 'false'));
-  $('#from').value = $('#to').value = $('#lang').value = '';
+  $('#from').value = $('#to').value = $('#lang').value = $('#len').value = '';
   updateCount();
 });
 $('#pick').addEventListener('click', pick);
@@ -190,4 +212,37 @@ $('#m-solo').addEventListener('click', () => setMode('solo'));
 $('#m-duo').addEventListener('click', () => setMode('duo'));
 $('#compare').addEventListener('click', compare);
 ['#userA', '#userB'].forEach((s) => $(s).addEventListener('keydown', (e) => { if (e.key === 'Enter') compare(); }));
+/* ---------- where to watch ---------- */
+const whereCache = new Map();
+async function loadWhere(f) {
+  const box = $('#where');
+  if (!WORKER_URL || !f.tmdb) return;
+  const key = f.tmdb + country;
+  box.innerHTML = '<div>Checking where to watch…</div>';
+  try {
+    if (!whereCache.has(key)) whereCache.set(key, api(`/watch?id=${f.tmdb}&country=${country}`));
+    const d = await whereCache.get(key);
+    if (last !== f || $('#open').hidden) return;
+    const row = (label, list) => list.length ? `<div><b>${label}</b>${list.map(esc).join(', ')}</div>` : '';
+    box.innerHTML = (row('Stream', d.stream) + row('Rent', d.rent) + row('Buy', d.buy)) ||
+      `<div>Not available to stream, rent or buy in ${esc(COUNTRIES[country])}.</div>`;
+    if (/^https:\/\//.test(d.link || '')) box.innerHTML += `<div><a href="${esc(d.link)}" target="_blank" rel="noopener">More on JustWatch</a></div>`;
+  } catch {
+    whereCache.delete(key);
+    if (last === f) box.innerHTML = '<div>Where to watch is unavailable right now.</div>';
+  }
+}
+
+$('#country').innerHTML = Object.entries(COUNTRIES).map(([c, n]) => `<option value="${c}">${n}</option>`).join('');
+$('#country').value = country;
+$('#country').addEventListener('change', (e) => {
+  country = e.target.value;
+  try { localStorage.setItem('rg:country', country); } catch {}
+  if (last && !$('#open').hidden) loadWhere(last);
+});
+$('#skip').addEventListener('click', () => {
+  if (last) { hidden.add(last.slug); saveHidden(); updateCount(); }
+  pick();
+});
+$('#unhide').addEventListener('click', () => { hidden.clear(); saveHidden(); updateCount(); });
 load();
