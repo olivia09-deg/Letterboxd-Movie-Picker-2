@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reel Good - Your Watchlist Picker</title>
+<title>Reel Good - your watchlist picker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -57,6 +57,12 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 #meta span:first-child{color:var(--orange);font-weight:600}
 #open{display:inline-block;margin-top:14px;color:var(--blue);font-weight:600}
 #updated{margin-top:12px;color:var(--mute);font-size:.8rem}
+.modes{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:6px}
+.mode{flex:1;font:inherit;font-weight:600;font-size:.9rem;padding:9px;border:0;background:none;color:var(--mute);cursor:pointer}
+.mode[aria-pressed=true]{background:var(--line);color:var(--ink)}
+#compare{font:inherit;font-weight:600;width:100%;margin-top:12px;padding:10px;border:1px solid var(--green);border-radius:8px;background:none;color:var(--green);cursor:pointer}
+#compare:disabled{opacity:.5;cursor:default}
+#status{color:var(--mute);font-size:.85rem;margin:10px 0 0;min-height:1.2em}
 @media(max-width:800px){.wrap{padding:0 16px 40px}.main{grid-template-columns:1fr;gap:28px}#stage{aspect-ratio:4/3}.eyebrow{margin-top:40px}h1{margin-bottom:36px}}
 </style>
 </head>
@@ -79,6 +85,19 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 
   <main class="main">
     <section aria-label="Filters">
+      <div class="modes">
+        <button type="button" class="mode" id="m-solo" aria-pressed="true">Just me</button>
+        <button type="button" class="mode" id="m-duo" aria-pressed="false">Movie night</button>
+      </div>
+      <div id="duo" hidden>
+        <label for="userA">Your Letterboxd username</label>
+        <input id="userA" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <label for="userB">Friend's username</label>
+        <input id="userB" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button id="compare" type="button">Compare watchlists</button>
+        <p id="status" aria-live="polite"></p>
+      </div>
+
       <span class="lbl">Release year</span>
       <div class="years">
         <input id="from" type="number" inputmode="numeric" aria-label="From year" placeholder="From">
