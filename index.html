@@ -63,6 +63,15 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 #compare{font:inherit;font-weight:600;width:100%;margin-top:12px;padding:10px;border:1px solid var(--green);border-radius:8px;background:none;color:var(--green);cursor:pointer}
 #compare:disabled{opacity:.5;cursor:default}
 #status{color:var(--mute);font-size:.85rem;margin:10px 0 0;min-height:1.2em}
+.len-note{display:none}
+#skip{font:inherit;font-weight:600;margin:14px 0 0 18px;padding:6px 14px;border:1px solid var(--mute);border-radius:99px;background:none;color:var(--ink);cursor:pointer}
+#skip:hover{border-color:var(--orange);color:var(--orange)}
+#where{margin-top:10px;font-size:.9rem;color:var(--mute)}
+#where b{color:var(--ink);font-weight:600;margin-right:8px}
+#where a{color:var(--blue)}
+#unhide{font:inherit;font-size:.85rem;background:none;border:0;color:var(--blue);text-decoration:underline;cursor:pointer;padding:0;margin-top:10px}
+.credit{color:var(--mute);font-size:.75rem;margin:40px 0 0;max-width:60ch}
+#stage{min-height:300px}
 @media(max-width:800px){.wrap{padding:0 16px 40px}.main{grid-template-columns:1fr;gap:28px}#stage{aspect-ratio:4/3}.eyebrow{margin-top:40px}h1{margin-bottom:36px}}
 </style>
 </head>
@@ -111,7 +120,20 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
       <label for="lang">Language</label>
       <select id="lang"><option value="">Any language</option></select>
 
+      <label for="len">Runtime</label>
+      <select id="len">
+        <option value="">Any length</option>
+        <option value="u90">Up to 90 min</option>
+        <option value="u120">Up to 2 hours</option>
+        <option value="u150">Up to 2.5 hours</option>
+        <option value="o150">Over 2.5 hours</option>
+      </select>
+
+      <label for="country">Streaming country</label>
+      <select id="country"></select>
+
       <div class="row"><span id="count" aria-live="polite">Loading…</span><button id="clear" type="button">Clear filters</button></div>
+      <button id="unhide" type="button" hidden></button>
       <button id="pick" type="button" disabled>Pick a film</button>
       <div id="updated"></div>
     </section>
@@ -123,11 +145,14 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
         <div id="info">
           <h2 id="title"></h2>
           <div id="meta"></div>
+        <div id="where"></div>
           <a id="open" href="#" target="_blank" rel="noopener" hidden>Open on Letterboxd</a>
+        <button id="skip" type="button" hidden>Not tonight</button>
         </div>
       </div>
     </section>
   </main>
+  <p class="credit">Streaming data from JustWatch, via TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
 </div>
 <script src="app.js"></script>
 </body>
