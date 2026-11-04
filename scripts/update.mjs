@@ -12,7 +12,7 @@ const uniq = (a) => [...new Set(a)];
 const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#0?39;|&#x27;/g, "'")
   .replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const nice = (slug) => slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-const stub = (slug) => ({ slug, title: nice(slug), year: null, genres: [], languages: [], image: null, incomplete: true });
+const stub = (slug) => ({ slug, title: nice(slug), year: null, genres: [], languages: [], image: null, runtime: null, tmdb: null, incomplete: true });
 
 async function get(url) {
   for (let i = 1; i <= 3; i++) {
@@ -47,6 +47,11 @@ async function details(slug) {
   const ogTitle = decode(og('title') || nice(slug));
   const year = +(html.match(/href="\/films\/year\/(\d{4})\//) || [])[1]
     || +(ogTitle.match(/\((\d{4})\)\s*$/) || [])[1] || null;
+  const foot = (html.match(/class="text-link text-footer"[^>]*>([\s\S]*?)<\/p>/) || [])[1] || html;
+  const rt = (foot.match(/([\d,]+)(?:&nbsp;|\s)*mins?\b/) || [])[1];
+  const runtime = rt ? +rt.replace(/,/g, '') : null;
+  const tm = html.match(/themoviedb\.org\/(movie|tv)\/(\d+)/);
+  const tmdb = tm && tm[1] === 'movie' ? +tm[2] : null;
   return {
     slug,
     title: ogTitle.replace(/\s*\(\d{4}\)\s*$/, ''),
@@ -54,6 +59,8 @@ async function details(slug) {
     genres: links('genre'),
     languages: links('language'),
     image: og('image') || null,
+    runtime,
+    tmdb,
   };
 }
 
@@ -71,14 +78,13 @@ if (!slugs.length) {
 
 const films = [];
 for (const slug of slugs) {
-  if (old[slug] && !old[slug].incomplete) { films.push(old[slug]); continue; } // already known
+  if (old[slug] && !old[slug].incomplete && 'runtime' in old[slug] && 'tmdb' in old[slug]) { films.push(old[slug]); continue; } // already known
   try { films.push((await details(slug)) || stub(slug)); }
   catch (e) { console.warn(e.message); films.push(stub(slug)); }
   await sleep(700);
 }
 
-const sig = (list) => JSON.stringify(list.map((f) => f.slug + (f.incomplete ? '!' : '')).sort());
-if (Object.keys(old).length && sig(Object.values(old)) === sig(films)) { console.log('No changes.'); process.exit(0); }
+if (Object.keys(old).length && JSON.stringify(Object.values(old)) === JSON.stringify(films)) { console.log('No changes.'); process.exit(0); }
 
 await writeFile(OUT, JSON.stringify({ user: USER, updated: new Date().toISOString(), films }, null, 1));
 console.log(`Saved ${films.length} films.`);
