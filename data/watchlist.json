@@ -1,7 +1,531 @@
 {
  "user": "livl3",
- "updated": "2026-11-04T11:40:41.038Z",
+ "updated": "2026-11-04T13:00:18.552Z",
  "films": [
+  {
+   "slug": "isle-of-dogs-2018",
+   "title": "Isle of Dogs",
+   "year": 2018,
+   "genres": [
+    "Comedy",
+    "Animation",
+    "Adventure"
+   ],
+   "languages": [
+    "English",
+    "Japanese"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/w4/nv/ni/8l/isle-of-dogs-1200-1200-675-675-crop-000000.jpg?v=a95eb8683a",
+   "runtime": 101,
+   "tmdb": 399174
+  },
+  {
+   "slug": "shiva-baby-2020",
+   "title": "Shiva Baby",
+   "year": 2020,
+   "genres": [
+    "Comedy",
+    "Drama"
+   ],
+   "languages": [
+    "English",
+    "Hebrew (modern)"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/bk/pl/gf/4f/shiva-babby-1200-1200-675-675-crop-000000.jpg?v=b745c74e73",
+   "runtime": 78,
+   "tmdb": 664300
+  },
+  {
+   "slug": "spin-me-round",
+   "title": "Spin Me Round",
+   "year": 2022,
+   "genres": [
+    "Romance",
+    "Comedy"
+   ],
+   "languages": [
+    "English",
+    "Italian"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/jk/3n/5o/qc/SPIN%20ME%20ROUND%20-%20Still%201-1200-1200-675-675-crop-000000.jpg?v=fbbd12f561",
+   "runtime": 104,
+   "tmdb": 826942
+  },
+  {
+   "slug": "priscilla",
+   "title": "Priscilla",
+   "year": 2023,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/62/ms/09/ch/priscilla-2023-1200-1200-675-675-crop-000000.jpg?v=364ae470c1",
+   "runtime": 113,
+   "tmdb": 1020006
+  },
+  {
+   "slug": "love-lies-bleeding-2024",
+   "title": "Love Lies Bleeding",
+   "year": 2024,
+   "genres": [
+    "Thriller",
+    "Crime",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/fl/qd/9q/0w/love%20lies-1200-1200-675-675-crop-000000.jpg?v=b0499369a2",
+   "runtime": 104,
+   "tmdb": 948549
+  },
+  {
+   "slug": "megalopolis-2024",
+   "title": "Megalopolis",
+   "year": 2024,
+   "genres": [
+    "Drama",
+    "Science Fiction",
+    "Fantasy"
+   ],
+   "languages": [
+    "English",
+    "Latin",
+    "Russian",
+    "Spanish"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/2j/7y/oq/xj/mega-1200-1200-675-675-crop-000000.jpg?v=d8737327e7",
+   "runtime": 138,
+   "tmdb": 592831
+  },
+  {
+   "slug": "the-last-showgirl",
+   "title": "The Last Showgirl",
+   "year": 2024,
+   "genres": [
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/1/8/7/8/6/tmdb/gwMXaHsYtfI9FkMVtrRhtr7dvXO-1200-1200-675-675-crop-000000.jpg?v=4012a9a5f9",
+   "runtime": 89,
+   "tmdb": 1235499
+  },
+  {
+   "slug": "before-1770-the-journey-home",
+   "title": "Before 1770: The Journey Home",
+   "year": 2024,
+   "genres": [
+    "Documentary"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/film-poster/1/2/5/2/0/2/6/1252026-before-1770-the-journey-home-0-230-0-345-crop.jpg?v=40a8a9c1d5",
+   "runtime": 93,
+   "tmdb": 1363880
+  },
+  {
+   "slug": "bridget-jones-mad-about-the-boy",
+   "title": "Bridget Jones: Mad About the Boy",
+   "year": 2025,
+   "genres": [
+    "Drama",
+    "Comedy",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/35/jx/n0/qj/IMG_4729-1200-1200-675-675-crop-000000.jpg?v=be1865fdd5",
+   "runtime": 124,
+   "tmdb": 1272149
+  },
+  {
+   "slug": "opus-2025",
+   "title": "Opus",
+   "year": 2025,
+   "genres": [
+    "Horror",
+    "Thriller",
+    "Mystery"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/0/8/7/0/0/0/tmdb/d4Cxr0MkXdrYZGM73mpKrpA1xBy-1200-1200-675-675-crop-000000.jpg?v=6b4a399608",
+   "runtime": 104,
+   "tmdb": 1202479
+  },
+  {
+   "slug": "the-talented-mr-f",
+   "title": "The Talented Mr. F",
+   "year": 2025,
+   "genres": [
+    "Documentary"
+   ],
+   "languages": [
+    "German"
+   ],
+   "image": "https://a.ltrbxd.com/resized/film-poster/1/4/2/4/7/0/8/1424708-der-talentierte-mr-f-0-230-0-345-crop.jpg?v=d0092c4472",
+   "runtime": 78,
+   "tmdb": 1550673
+  },
+  {
+   "slug": "the-red-shoes",
+   "title": "The Red Shoes",
+   "year": 1948,
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "languages": [
+    "English",
+    "Russian",
+    "French"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/fu/qf/kx/tt/red-shoes-1200-1200-675-675-crop-000000.jpg?v=b670b336d9",
+   "runtime": 133,
+   "tmdb": 19542
+  },
+  {
+   "slug": "mean-girls",
+   "title": "Mean Girls",
+   "year": 2004,
+   "genres": [
+    "Comedy",
+    "Drama"
+   ],
+   "languages": [
+    "English",
+    "Swahili",
+    "German",
+    "Vietnamese"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/zc/lk/pq/6u/mean-girls-1200-1200-675-675-crop-000000.jpg?v=25c224eb18",
+   "runtime": 97,
+   "tmdb": 10625
+  },
+  {
+   "slug": "hereditary",
+   "title": "Hereditary",
+   "year": 2018,
+   "genres": [
+    "Thriller",
+    "Horror",
+    "Mystery"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/n8/1b/aq/qx/hereditary-1200-1200-675-675-crop-000000.jpg?v=dab0d1c6ef",
+   "runtime": 128,
+   "tmdb": 493922
+  },
+  {
+   "slug": "m3gan",
+   "title": "M3GAN",
+   "year": 2022,
+   "genres": [
+    "Science Fiction",
+    "Horror"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/g5/6a/0u/c6/m3gan-1200-1200-675-675-crop-000000.jpg?v=0f6275b262",
+   "runtime": 102,
+   "tmdb": 536554
+  },
+  {
+   "slug": "the-boy-and-the-heron",
+   "title": "The Boy and the Heron",
+   "year": 2023,
+   "genres": [
+    "Animation",
+    "Fantasy",
+    "Drama"
+   ],
+   "languages": [
+    "Japanese"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/p5/p2/uu/qw/zw8xr67ForpLerzMSlZOFKXRhnc-1200-1200-675-675-crop-000000.jpg?v=b0c50cde3b",
+   "runtime": 124,
+   "tmdb": 508883
+  },
+  {
+   "slug": "the-seed-of-the-sacred-fig",
+   "title": "The Seed of the Sacred Fig",
+   "year": 2024,
+   "genres": [
+    "Crime",
+    "Drama",
+    "Thriller"
+   ],
+   "languages": [
+    "Persian (Farsi)"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/48/cg/6b/cd/seed-1200-1200-675-675-crop-000000.jpg?v=d7a550833a",
+   "runtime": 167,
+   "tmdb": 1278263
+  },
+  {
+   "slug": "together-2025",
+   "title": "Together",
+   "year": 2025,
+   "genres": [
+    "Horror",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/2/5/3/9/7/tmdb/uBB1aMga5ngZxsUQL5k36zeW3pB-1200-1200-675-675-crop-000000.jpg?v=e30d8240cf",
+   "runtime": 102,
+   "tmdb": 1242011
+  },
+  {
+   "slug": "novocaine-2025",
+   "title": "Novocaine",
+   "year": 2025,
+   "genres": [
+    "Action",
+    "Comedy",
+    "Thriller"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/38/3d/53/bd/cP16wq0P6f4in8vg2eTlqLSnaAH-1200-1200-675-675-crop-000000.jpg?v=db72744682",
+   "runtime": 110,
+   "tmdb": 1195506
+  },
+  {
+   "slug": "exit-8",
+   "title": "Exit 8",
+   "year": 2025,
+   "genres": [
+    "Mystery",
+    "Horror",
+    "Thriller"
+   ],
+   "languages": [
+    "Japanese",
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/2/9/0/7/1/8/tmdb/ie827c44beNPNnxIOi8EM9mCI4A-1200-1200-675-675-crop-000000.jpg?v=9bedbd5352",
+   "runtime": 95,
+   "tmdb": 1408208
+  },
+  {
+   "slug": "my-daughter-is-a-zombie",
+   "title": "My Daughter Is a Zombie",
+   "year": 2025,
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "languages": [
+    "Korean"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/8/8/7/0/9/tmdb/gT7MXlPs7ohpdefR5cdgdPx1zsf-1200-1200-675-675-crop-000000.jpg?v=c598d092cc",
+   "runtime": 114,
+   "tmdb": 1306816
+  },
+  {
+   "slug": "materialists",
+   "title": "Materialists",
+   "year": 2025,
+   "genres": [
+    "Romance",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/0/2/4/5/6/2/tmdb/cciiSBKGc2uZxjFkhKaWw4QzvAH-1200-1200-675-675-crop-000000.jpg?v=105534a375",
+   "runtime": 116,
+   "tmdb": 1136867
+  },
+  {
+   "slug": "weapons-2025",
+   "title": "Weapons",
+   "year": 2025,
+   "genres": [
+    "Horror",
+    "Mystery"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/l7/cx/wv/3u/sQUvdgUcAX3YR5otU1RuCkIPaJX-1200-1200-675-675-crop-000000.jpg?v=0d9de97e26",
+   "runtime": 128,
+   "tmdb": 1078605
+  },
+  {
+   "slug": "rental-family-2025",
+   "title": "Rental Family",
+   "year": 2025,
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "languages": [
+    "English",
+    "Japanese"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/0/9/2/7/7/8/tmdb/k12wgE0OYWNczqogEHS5CAY9X7d-1200-1200-675-675-crop-000000.jpg?v=0c9b82258b",
+   "runtime": 110,
+   "tmdb": 1208348
+  },
+  {
+   "slug": "eternity-2025-1",
+   "title": "Eternity",
+   "year": 2025,
+   "genres": [
+    "Romance",
+    "Drama",
+    "Comedy"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/4/3/3/9/0/tmdb/tQscGgR0PKIteMoMMwL8ISfRUCH-1200-1200-675-675-crop-000000.jpg?v=90106ec105",
+   "runtime": 114,
+   "tmdb": 1259102
+  },
+  {
+   "slug": "regretting-you",
+   "title": "Regretting You",
+   "year": 2025,
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/2/0/8/0/7/6/tmdb/dKPwnryTkgL0JihpQBnLvZTQnvT-1200-1200-675-675-crop-000000.jpg?v=fb625b93f1",
+   "runtime": 116,
+   "tmdb": 1327862
+  },
+  {
+   "slug": "is-this-thing-on-2025",
+   "title": "Is This Thing On?",
+   "year": 2025,
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/e5/6w/3u/dg/3qOVsTF1hcOYMNZ9TNl7S9Tm3Y6-1200-1200-675-675-crop-000000.jpg?v=de1dcfd7ed",
+   "runtime": 121,
+   "tmdb": 1140498
+  },
+  {
+   "slug": "the-housemaid-2025",
+   "title": "The Housemaid",
+   "year": 2025,
+   "genres": [
+    "Thriller",
+    "Mystery"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/2/5/5/3/1/9/tmdb/bEcRxVHyCmwTYYlVVLLgGz2GdWW-1200-1200-675-675-crop-000000.jpg?v=7b19305eeb",
+   "runtime": 131,
+   "tmdb": 1368166
+  },
+  {
+   "slug": "iron-lung",
+   "title": "Iron Lung",
+   "year": 2026,
+   "genres": [
+    "Mystery",
+    "Science Fiction",
+    "Horror"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/sm/upload/dv/gj/py/o7/h1iMimR9uG8dGezlO7dRtFPXWX5-1200-1200-675-675-crop-000000.jpg?v=17729b642f",
+   "runtime": 125,
+   "tmdb": 1116201
+  },
+  {
+   "slug": "ready-or-not-2-here-i-come",
+   "title": "Ready or Not 2: Here I Come",
+   "year": 2026,
+   "genres": [
+    "Comedy",
+    "Horror"
+   ],
+   "languages": [
+    "English",
+    "Spanish",
+    "Chinese"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/5/0/1/1/3/tmdb/tdf9PfL8txtzGTmWt6lIXWi8nCm-1200-1200-675-675-crop-000000.jpg?v=c1b4cb60c9",
+   "runtime": 108,
+   "tmdb": 1266127
+  },
+  {
+   "slug": "mike-nick-nick-alice",
+   "title": "Mike & Nick & Nick & Alice",
+   "year": 2026,
+   "genres": [
+    "Comedy",
+    "Action",
+    "Science Fiction"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/0/0/5/6/8/5/tmdb/cgCJYU5knoOlUnU2T9E04FTG5Fk-1200-1200-675-675-crop-000000.jpg?v=e98d502f7d",
+   "runtime": 107,
+   "tmdb": 1115544
+  },
+  {
+   "slug": "backrooms-2026",
+   "title": "Backrooms",
+   "year": 2026,
+   "genres": [
+    "Mystery",
+    "Science Fiction",
+    "Horror"
+   ],
+   "languages": [
+    "English",
+    "Japanese",
+    "Polish"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/9/7/6/4/1/9/tmdb/nwlTTCHTIBtkvb70762Ug25khlV-1200-1200-675-675-crop-000000.jpg?v=ffeffd44cc",
+   "runtime": 111,
+   "tmdb": 1083381
+  },
+  {
+   "slug": "unabomber-2026",
+   "title": "Unabomber",
+   "year": 2026,
+   "genres": [
+    "Crime",
+    "Thriller",
+    "Drama"
+   ],
+   "languages": [
+    "English"
+   ],
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/3/6/9/2/1/1/tmdb/XohTvvPXiGhUKhiQSvmoMTnj2z-1200-1200-675-675-crop-000000.jpg?v=99f1903b56",
+   "runtime": 101,
+   "tmdb": 1492640
+  },
   {
    "slug": "life-2015",
    "title": "Life",
