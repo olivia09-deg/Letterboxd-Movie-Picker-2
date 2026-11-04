@@ -1,6 +1,6 @@
 {
  "user": "livl3",
- "updated": "2026-11-04T11:12:36.747Z",
+ "updated": "2026-11-04T11:40:41.038Z",
  "films": [
   {
    "slug": "life-2015",
@@ -12,7 +12,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/gr/rp/p8/zh/life-2015-1200-1200-675-675-crop-000000.jpg?v=f50fd11304"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/gr/rp/p8/zh/life-2015-1200-1200-675-675-crop-000000.jpg?v=f50fd11304",
+   "runtime": 112,
+   "tmdb": 300153
   },
   {
    "slug": "water-for-elephants",
@@ -26,7 +28,9 @@
     "English",
     "Polish"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/66/sg/1o/y8/water-for-elephants-1200-1200-675-675-crop-000000.jpg?v=47ddfc2c82"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/66/sg/1o/y8/water-for-elephants-1200-1200-675-675-crop-000000.jpg?v=47ddfc2c82",
+   "runtime": 122,
+   "tmdb": 55787
   },
   {
    "slug": "high-life-2018",
@@ -40,7 +44,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/1o/hd/06/4f/high-life-1200-1200-675-675-crop-000000.jpg?v=968af4955c"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/1o/hd/06/4f/high-life-1200-1200-675-675-crop-000000.jpg?v=968af4955c",
+   "runtime": 113,
+   "tmdb": 376865
   },
   {
    "slug": "the-batman",
@@ -54,7 +60,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/h1/on/1p/hg/the-batman-1200-1200-675-675-crop-000000.jpg?v=1f59052f03"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/h1/on/1p/hg/the-batman-1200-1200-675-675-crop-000000.jpg?v=1f59052f03",
+   "runtime": 177,
+   "tmdb": 414906
   },
   {
    "slug": "tenet",
@@ -71,7 +79,9 @@
     "Russian",
     "Ukrainian"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/5m/00/ad/bl/tenet-1200-1200-675-675-crop-000000.jpg?v=2f1c9ecacd"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/5m/00/ad/bl/tenet-1200-1200-675-675-crop-000000.jpg?v=2f1c9ecacd",
+   "runtime": 150,
+   "tmdb": 577922
   },
   {
    "slug": "maps-to-the-stars",
@@ -83,7 +93,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/fc/ps/lj/7p/maps-to-the-stars-1200-1200-675-675-crop-000000.jpg?v=d26b44a879"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/fc/ps/lj/7p/maps-to-the-stars-1200-1200-675-675-crop-000000.jpg?v=d26b44a879",
+   "runtime": 112,
+   "tmdb": 157851
   },
   {
    "slug": "dune-part-two",
@@ -96,7 +108,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/qp/uv/i4/8b/l6b9YZEokZl1nt7q0pprrur6btG-1200-1200-675-675-crop-000000.jpg?v=ed21d71137"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/qp/uv/i4/8b/l6b9YZEokZl1nt7q0pprrur6btG-1200-1200-675-675-crop-000000.jpg?v=ed21d71137",
+   "runtime": 167,
+   "tmdb": 693134
   },
   {
    "slug": "dune-2021",
@@ -109,7 +123,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/a6/8b/5j/zk/dune-2021a-1200-1200-675-675-crop-000000.jpg?v=7422445327"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/a6/8b/5j/zk/dune-2021a-1200-1200-675-675-crop-000000.jpg?v=7422445327",
+   "runtime": 155,
+   "tmdb": 438631
   },
   {
    "slug": "dune-part-three",
@@ -122,7 +138,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/0/5/7/4/6/1/tmdb/fgISFNlz8ZBplHa5cNXDsPe6VYK-1200-1200-675-675-crop-000000.jpg?v=36c20f30db"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/0/5/7/4/6/1/tmdb/fgISFNlz8ZBplHa5cNXDsPe6VYK-1200-1200-675-675-crop-000000.jpg?v=36c20f30db",
+   "runtime": 150,
+   "tmdb": 1170608
   },
   {
    "slug": "girl-interrupted",
@@ -134,7 +152,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/av/w8/ds/jl/girl-interrupted-1200-1200-675-675-crop-000000.jpg?v=282d5c03a1"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/av/w8/ds/jl/girl-interrupted-1200-1200-675-675-crop-000000.jpg?v=282d5c03a1",
+   "runtime": 127,
+   "tmdb": 3558
   },
   {
    "slug": "angels-in-america",
@@ -148,7 +168,9 @@
     "Hebrew (modern)",
     "Yiddish"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/xj/x3/t9/gf/angels-1200-1200-675-675-crop-000000.jpg?v=12b63cd202"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/xj/x3/t9/gf/angels-1200-1200-675-675-crop-000000.jpg?v=12b63cd202",
+   "runtime": 352,
+   "tmdb": null
   },
   {
    "slug": "merata-how-mum-decolonised-the-screen",
@@ -161,7 +183,9 @@
     "English",
     "Māori"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/39/nn/nr/9k/Merata-1200-1200-675-675-crop-000000.jpg?v=78c6eaff6a"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/39/nn/nr/9k/Merata-1200-1200-675-675-crop-000000.jpg?v=78c6eaff6a",
+   "runtime": 88,
+   "tmdb": 532100
   },
   {
    "slug": "portrait-of-a-lady-on-fire",
@@ -175,7 +199,9 @@
     "French",
     "Italian"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/6s/c1/hx/il/portrait-of-lady-on-fire-1200-1200-675-675-crop-000000.jpg?v=9e65e80a13"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/6s/c1/hx/il/portrait-of-lady-on-fire-1200-1200-675-675-crop-000000.jpg?v=9e65e80a13",
+   "runtime": 121,
+   "tmdb": 531428
   },
   {
    "slug": "death-becomes-her",
@@ -189,7 +215,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/6g/15/71/7y/death-becomes-her-1200-1200-675-675-crop-000000.jpg?v=088721bdbe"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/6g/15/71/7y/death-becomes-her-1200-1200-675-675-crop-000000.jpg?v=088721bdbe",
+   "runtime": 104,
+   "tmdb": 9374
   },
   {
    "slug": "how-to-make-millions-before-grandma-dies",
@@ -201,7 +229,9 @@
    "languages": [
     "Thai"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/vl/w6/6z/zl/k6tpQCQfBHRhzfUhp9Sb51SUikK-1200-1200-675-675-crop-000000.jpg?v=1f5dfe6786"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/vl/w6/6z/zl/k6tpQCQfBHRhzfUhp9Sb51SUikK-1200-1200-675-675-crop-000000.jpg?v=1f5dfe6786",
+   "runtime": 126,
+   "tmdb": 1103621
   },
   {
    "slug": "the-lobster",
@@ -217,7 +247,9 @@
     "French",
     "Greek (modern)"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/gc/i6/0a/0z/the-lobster-1200-1200-675-675-crop-000000.jpg?v=78b968896e"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/gc/i6/0a/0z/the-lobster-1200-1200-675-675-crop-000000.jpg?v=78b968896e",
+   "runtime": 119,
+   "tmdb": 254320
   },
   {
    "slug": "the-killing-of-a-sacred-deer",
@@ -232,7 +264,9 @@
     "English",
     "French"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/wr/lp/8l/31/the-killing-of-a-sacred-deer-1200-1200-675-675-crop-000000.jpg?v=6186b664d6"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/wr/lp/8l/31/the-killing-of-a-sacred-deer-1200-1200-675-675-crop-000000.jpg?v=6186b664d6",
+   "runtime": 121,
+   "tmdb": 399057
   },
   {
    "slug": "the-lighthouse-2019",
@@ -247,7 +281,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/q3/nd/ae/zn/the-lighthouse-1200-1200-675-675-crop-000000.jpg?v=d3734cdd04"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/q3/nd/ae/zn/the-lighthouse-1200-1200-675-675-crop-000000.jpg?v=d3734cdd04",
+   "runtime": 109,
+   "tmdb": 503919
   },
   {
    "slug": "invasion-of-the-body-snatchers",
@@ -262,7 +298,9 @@
     "English",
     "Danish"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/yp/jx/ks/h1/invasion-of-the-body-snatchers-1200-1200-675-675-crop-000000.jpg?v=ee1f9775c6"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/yp/jx/ks/h1/invasion-of-the-body-snatchers-1200-1200-675-675-crop-000000.jpg?v=ee1f9775c6",
+   "runtime": 80,
+   "tmdb": 11549
   },
   {
    "slug": "the-texas-chain-saw-massacre",
@@ -274,7 +312,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/e4/j2/1q/2h/the-texas-chain-saw-massacre-1200-1200-675-675-crop-000000.jpg?v=dbceb0d20b"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/e4/j2/1q/2h/the-texas-chain-saw-massacre-1200-1200-675-675-crop-000000.jpg?v=dbceb0d20b",
+   "runtime": 83,
+   "tmdb": 30497
   },
   {
    "slug": "inside-2007",
@@ -286,7 +326,9 @@
    "languages": [
     "French"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/eo/cv/rl/bd/inside-1200-1200-675-675-crop-000000.jpg?v=6291e97fcc"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/eo/cv/rl/bd/inside-1200-1200-675-675-crop-000000.jpg?v=6291e97fcc",
+   "runtime": 83,
+   "tmdb": 13312
   },
   {
    "slug": "the-odyssey-2026",
@@ -300,7 +342,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/vn/7k/d6/d7/odyssey-1200-1200-675-675-crop-000000.jpg?v=9f3eb79026"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/vn/7k/d6/d7/odyssey-1200-1200-675-675-crop-000000.jpg?v=9f3eb79026",
+   "runtime": 173,
+   "tmdb": 1368337
   },
   {
    "slug": "i-want-your-sex",
@@ -312,7 +356,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/0/9/5/4/tmdb/qNZm0m1WWjYx8UVyrEkEwN4dgyl-1200-1200-675-675-crop-000000.jpg?v=ad8344b874"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/0/9/5/4/tmdb/qNZm0m1WWjYx8UVyrEkEwN4dgyl-1200-1200-675-675-crop-000000.jpg?v=ad8344b874",
+   "runtime": 90,
+   "tmdb": 1288059
   },
   {
    "slug": "teenage-sex-and-death-at-camp-miasma",
@@ -326,7 +372,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/7m/h0/iq/dx/5dbLRlAeIh4U3hyj4i4S4shv9AW-1200-1200-675-675-crop-000000.jpg?v=4f87c8fe02"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/7m/h0/iq/dx/5dbLRlAeIh4U3hyj4i4S4shv9AW-1200-1200-675-675-crop-000000.jpg?v=4f87c8fe02",
+   "runtime": 112,
+   "tmdb": 1240889
   },
   {
    "slug": "hokum",
@@ -340,7 +388,9 @@
     "English",
     "Spanish"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/3/0/8/5/8/7/tmdb/ljpo2yYlsIDzuI4Urbe3TgexntI-1200-1200-675-675-crop-000000.jpg?v=19f0f67f88"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/3/0/8/5/8/7/tmdb/ljpo2yYlsIDzuI4Urbe3TgexntI-1200-1200-675-675-crop-000000.jpg?v=19f0f67f88",
+   "runtime": 108,
+   "tmdb": 1430077
   },
   {
    "slug": "the-sixth-sense",
@@ -357,7 +407,9 @@
     "Latin",
     "Spanish"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/bn/hc/0u/en/sixthsense-1200-1200-675-675-crop-000000.jpg?v=96b2ba2a1e"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/bn/hc/0u/en/sixthsense-1200-1200-675-675-crop-000000.jpg?v=96b2ba2a1e",
+   "runtime": 107,
+   "tmdb": 745
   },
   {
    "slug": "parasite-2019",
@@ -373,7 +425,9 @@
     "English",
     "German"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/oi/ha/78/z8/parasite-1200-1200-675-675-crop-000000.jpg?v=03b9da4410"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/oi/ha/78/z8/parasite-1200-1200-675-675-crop-000000.jpg?v=03b9da4410",
+   "runtime": 133,
+   "tmdb": 496243
   },
   {
    "slug": "last-night-in-soho",
@@ -387,7 +441,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/in/lt/lr/1o/last-night-in-soho-1200-1200-675-675-crop-000000.jpg?v=1245b54e2b"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/in/lt/lr/1o/last-night-in-soho-1200-1200-675-675-crop-000000.jpg?v=1245b54e2b",
+   "runtime": 116,
+   "tmdb": 576845
   },
   {
    "slug": "breakfast-at-tiffanys",
@@ -402,7 +458,9 @@
     "English",
     "Portuguese"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/jm/wn/yu/28/breakfast-at-tiffanys-1200-1200-675-675-crop-000000.jpg?v=585e14bb37"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/jm/wn/yu/28/breakfast-at-tiffanys-1200-1200-675-675-crop-000000.jpg?v=585e14bb37",
+   "runtime": 115,
+   "tmdb": 164
   },
   {
    "slug": "bones-and-all",
@@ -416,7 +474,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/t2/l6/qv/bg/bones4-1200-1200-675-675-crop-000000.jpg?v=27534b7249"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/t2/l6/qv/bg/bones4-1200-1200-675-675-crop-000000.jpg?v=27534b7249",
+   "runtime": 131,
+   "tmdb": 791177
   },
   {
    "slug": "lolita",
@@ -430,7 +490,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/of/ca/l9/4a/lolita-1200-1200-675-675-crop-000000.jpg?v=953162bb80"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/of/ca/l9/4a/lolita-1200-1200-675-675-crop-000000.jpg?v=953162bb80",
+   "runtime": 154,
+   "tmdb": 802
   },
   {
    "slug": "a-room-with-a-view",
@@ -444,7 +506,9 @@
     "English",
     "Italian"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/tu/zn/fy/n9/a-room-with-a-view-1200-1200-675-675-crop-000000.jpg?v=6e19d80d9b"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/tu/zn/fy/n9/a-room-with-a-view-1200-1200-675-675-crop-000000.jpg?v=6e19d80d9b",
+   "runtime": 117,
+   "tmdb": 11257
   },
   {
    "slug": "basic-instinct",
@@ -457,7 +521,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/41/5o/nh/nc/basic-instinct-1200-1200-675-675-crop-000000.jpg?v=45209645e4"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/41/5o/nh/nc/basic-instinct-1200-1200-675-675-crop-000000.jpg?v=45209645e4",
+   "runtime": 128,
+   "tmdb": 402
   },
   {
    "slug": "the-witch-2015",
@@ -471,7 +537,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/ii/1v/z8/lk/the-witch-1200-1200-675-675-crop-000000.jpg?v=06f9adfe9a"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/ii/1v/z8/lk/the-witch-1200-1200-675-675-crop-000000.jpg?v=06f9adfe9a",
+   "runtime": 92,
+   "tmdb": 310131
   },
   {
    "slug": "buffy-the-vampire-slayer",
@@ -485,7 +553,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/as/eo/9v/ga/buffy-vampire-slayer-1200-1200-675-675-crop-000000.jpg?v=00528f67c5"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/as/eo/9v/ga/buffy-vampire-slayer-1200-1200-675-675-crop-000000.jpg?v=00528f67c5",
+   "runtime": 85,
+   "tmdb": 10206
   },
   {
    "slug": "the-importance-of-being-earnest-2002",
@@ -501,7 +571,9 @@
     "English",
     "German"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/gi/jo/cu/zg/74RvBYAo2GzdVuY4Tw7Y0lecKYq-1200-1200-675-675-crop-000000.jpg?v=7fef5f2def"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/gi/jo/cu/zg/74RvBYAo2GzdVuY4Tw7Y0lecKYq-1200-1200-675-675-crop-000000.jpg?v=7fef5f2def",
+   "runtime": 97,
+   "tmdb": 9026
   },
   {
    "slug": "submarine",
@@ -515,7 +587,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/qz/q8/1o/vw/submarine-50-1200-1200-675-675-crop-000000.jpg?v=4322134aa7"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/qz/q8/1o/vw/submarine-50-1200-1200-675-675-crop-000000.jpg?v=4322134aa7",
+   "runtime": 97,
+   "tmdb": 49020
   },
   {
    "slug": "ingrid-goes-west",
@@ -528,7 +602,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/99/jj/j1/2k/ingrid-goes-west-1200-1200-675-675-crop-000000.jpg?v=d64c7ef877"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/99/jj/j1/2k/ingrid-goes-west-1200-1200-675-675-crop-000000.jpg?v=d64c7ef877",
+   "runtime": 98,
+   "tmdb": 411741
   },
   {
    "slug": "the-neon-demon",
@@ -541,7 +617,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/md/nu/67/64/the-neon-demon-1200-1200-675-675-crop-000000.jpg?v=e06205543d"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/md/nu/67/64/the-neon-demon-1200-1200-675-675-crop-000000.jpg?v=e06205543d",
+   "runtime": 118,
+   "tmdb": 301365
   },
   {
    "slug": "pillion-2025",
@@ -555,7 +633,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/0/4/3/3/tmdb/6NjfwjZWnFHRwpObuDpDDk4168C-1200-1200-675-675-crop-000000.jpg?v=7be5062d0b"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/0/4/3/3/tmdb/6NjfwjZWnFHRwpObuDpDDk4168C-1200-1200-675-675-crop-000000.jpg?v=7be5062d0b",
+   "runtime": 107,
+   "tmdb": 1287141
   },
   {
    "slug": "the-testament-of-ann-lee",
@@ -569,7 +649,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/rk/tp/tu/re/khfhhq3FhF6JxFB0yzbrsSzhAs5-1200-1200-675-675-crop-000000.jpg?v=dd53d8ead2"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/rk/tp/tu/re/khfhhq3FhF6JxFB0yzbrsSzhAs5-1200-1200-675-675-crop-000000.jpg?v=dd53d8ead2",
+   "runtime": 137,
+   "tmdb": 1401281
   },
   {
    "slug": "failure-to-launch",
@@ -582,7 +664,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/4v/f6/js/fm/failure%20to%20launch-1200-1200-675-675-crop-000000.jpg?v=5083df80b2"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/4v/f6/js/fm/failure%20to%20launch-1200-1200-675-675-crop-000000.jpg?v=5083df80b2",
+   "runtime": 97,
+   "tmdb": 6877
   },
   {
    "slug": "friendship-2024",
@@ -595,7 +679,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/2/2/6/9/1/tmdb/miayZ4OPpHgPATEqnWoLAvEKmxn-1200-1200-675-675-crop-000000.jpg?v=2a46626c37"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/2/2/6/9/1/tmdb/miayZ4OPpHgPATEqnWoLAvEKmxn-1200-1200-675-675-crop-000000.jpg?v=2a46626c37",
+   "runtime": 100,
+   "tmdb": 1239655
   },
   {
    "slug": "wuthering-heights-2026",
@@ -609,7 +695,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/9/6/9/1/1/tmdb/oGAYQOhfuXMh9Cpp4LNfzI5uDS3-1200-1200-675-675-crop-000000.jpg?v=e3febde0b8"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/9/6/9/1/1/tmdb/oGAYQOhfuXMh9Cpp4LNfzI5uDS3-1200-1200-675-675-crop-000000.jpg?v=e3febde0b8",
+   "runtime": 136,
+   "tmdb": 1316092
   },
   {
    "slug": "vice-2018",
@@ -621,7 +709,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/qt/5i/j2/qw/vice-1200-1200-675-675-crop-000000.jpg?v=a76f5f3710"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/qt/5i/j2/qw/vice-1200-1200-675-675-crop-000000.jpg?v=a76f5f3710",
+   "runtime": 132,
+   "tmdb": 429197
   },
   {
    "slug": "monte-carlo",
@@ -635,7 +725,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/ts/e1/hl/wf/eFHdnA8FwRrwSbAOj1JjlRsgxnk-1200-1200-675-675-crop-000000.jpg?v=dde5b8155c"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/ts/e1/hl/wf/eFHdnA8FwRrwSbAOj1JjlRsgxnk-1200-1200-675-675-crop-000000.jpg?v=dde5b8155c",
+   "runtime": 109,
+   "tmdb": 59860
   },
   {
    "slug": "clue",
@@ -650,7 +742,9 @@
     "English",
     "French"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/mk/mi/1k/v8/clue-1200-1200-675-675-crop-000000.jpg?v=3742386ac7"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/mk/mi/1k/v8/clue-1200-1200-675-675-crop-000000.jpg?v=3742386ac7",
+   "runtime": 94,
+   "tmdb": 15196
   },
   {
    "slug": "resident-evil-2026",
@@ -664,7 +758,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/c7/2d/gq/lu/resi-1200-1200-675-675-crop-000000.jpg?v=8d3221cbed"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/c7/2d/gq/lu/resi-1200-1200-675-675-crop-000000.jpg?v=8d3221cbed",
+   "runtime": 95,
+   "tmdb": 1423191
   },
   {
    "slug": "halloween-1978",
@@ -677,7 +773,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/zg/ku/ln/58/halloween-1978-70-1200-1200-675-675-crop-000000.jpg?v=6a2ada978f"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/zg/ku/ln/58/halloween-1978-70-1200-1200-675-675-crop-000000.jpg?v=6a2ada978f",
+   "runtime": 91,
+   "tmdb": 948
   },
   {
    "slug": "you-can-see-everything",
@@ -689,7 +787,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/wr/rf/xg/hl/IMG_2387-1200-1200-675-675-crop-000000.jpg?v=cfa3502c10"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/wr/rf/xg/hl/IMG_2387-1200-1200-675-675-crop-000000.jpg?v=cfa3502c10",
+   "runtime": 174,
+   "tmdb": 1765072
   },
   {
    "slug": "primetime-2026",
@@ -702,7 +802,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/2/6/2/0/1/9/tmdb/mbnopFljGL3UIkSC22uQap4y5ah-1200-1200-675-675-crop-000000.jpg?v=d9a7b9f810"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/2/6/2/0/1/9/tmdb/mbnopFljGL3UIkSC22uQap4y5ah-1200-1200-675-675-crop-000000.jpg?v=d9a7b9f810",
+   "runtime": 110,
+   "tmdb": 1375441
   },
   {
    "slug": "two-prosecutors",
@@ -718,7 +820,9 @@
     "Russian",
     "Ukrainian"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/4/1/4/8/0/tmdb/3IZPY1mCgAKJTCvGVJv9ufyUz2f-1200-1200-675-675-crop-000000.jpg?v=9c57aca3b2"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/4/1/4/8/0/tmdb/3IZPY1mCgAKJTCvGVJv9ufyUz2f-1200-1200-675-675-crop-000000.jpg?v=9c57aca3b2",
+   "runtime": 118,
+   "tmdb": 1257406
   },
   {
    "slug": "the-long-walk-2025",
@@ -732,7 +836,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/5/3/1/3/1/6/tmdb/zf7BQY4k5RNFI1sD4n9EVLnEG8m-1200-1200-675-675-crop-000000.jpg?v=4887771d4a"
+   "image": "https://a.ltrbxd.com/resized/alternative-backdrop/5/3/1/3/1/6/tmdb/zf7BQY4k5RNFI1sD4n9EVLnEG8m-1200-1200-675-675-crop-000000.jpg?v=4887771d4a",
+   "runtime": 108,
+   "tmdb": 604079
   },
   {
    "slug": "sacrifice-2025",
@@ -746,7 +852,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/pm/12/ix/d4/3kYnfR6PN20bD4zshZfGza6jA6f-1200-1200-675-675-crop-000000.jpg?v=a7a9f90720"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/pm/12/ix/d4/3kYnfR6PN20bD4zshZfGza6jA6f-1200-1200-675-675-crop-000000.jpg?v=a7a9f90720",
+   "runtime": 100,
+   "tmdb": 1284186
   },
   {
    "slug": "past-lives",
@@ -760,7 +868,9 @@
     "English",
     "Korean"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/w5/vf/ru/qm/past-lives-1200-1200-675-675-crop-000000.jpg?v=2ff888a5e1"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/w5/vf/ru/qm/past-lives-1200-1200-675-675-crop-000000.jpg?v=2ff888a5e1",
+   "runtime": 106,
+   "tmdb": 666277
   },
   {
    "slug": "pearl-2022",
@@ -774,7 +884,9 @@
     "English",
     "German"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/q2/0n/4m/oh/pearl-1200-1200-675-675-crop-000000.jpg?v=0ed37f5964"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/q2/0n/4m/oh/pearl-1200-1200-675-675-crop-000000.jpg?v=0ed37f5964",
+   "runtime": 102,
+   "tmdb": 949423
   },
   {
    "slug": "whiplash-2014",
@@ -788,7 +900,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/sk/f3/f1/b2/whiplash-1200-1200-675-675-crop-000000.jpg?v=771f1a019d"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/sk/f3/f1/b2/whiplash-1200-1200-675-675-crop-000000.jpg?v=771f1a019d",
+   "runtime": 107,
+   "tmdb": 244786
   },
   {
    "slug": "a-different-man",
@@ -802,7 +916,9 @@
     "English",
     "Russian"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/gp/m2/rs/1m/ADifferentMan-1200-1200-675-675-crop-000000.jpg?v=0ad096bcad"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/gp/m2/rs/1m/ADifferentMan-1200-1200-675-675-crop-000000.jpg?v=0ad096bcad",
+   "runtime": 112,
+   "tmdb": 989662
   },
   {
    "slug": "we-live-in-time",
@@ -815,7 +931,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/t4/au/4r/kk/we%20live%20in%20time-1200-1200-675-675-crop-000000.jpg?v=479f99bc8a"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/t4/au/4r/kk/we%20live%20in%20time-1200-1200-675-675-crop-000000.jpg?v=479f99bc8a",
+   "runtime": 108,
+   "tmdb": 1100099
   },
   {
    "slug": "the-lovely-bones",
@@ -828,7 +946,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/10/dr/4v/kz/lovely-bones-1200-1200-675-675-crop-000000.jpg?v=f8d15ac7bd"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/10/dr/4v/kz/lovely-bones-1200-1200-675-675-crop-000000.jpg?v=f8d15ac7bd",
+   "runtime": 136,
+   "tmdb": 7980
   },
   {
    "slug": "nosferatu-2024",
@@ -845,7 +965,9 @@
     "Romanian",
     "Russian"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/l3/72/mx/b8/vqToPEywI1QzUNd5bJceldmrWUf-1200-1200-675-675-crop-000000.jpg?v=cdd95a78e1"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/l3/72/mx/b8/vqToPEywI1QzUNd5bJceldmrWUf-1200-1200-675-675-crop-000000.jpg?v=cdd95a78e1",
+   "runtime": 133,
+   "tmdb": 426063
   },
   {
    "slug": "lee-2023",
@@ -860,7 +982,9 @@
     "English",
     "French"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/8o/13/yf/b8/zxF6LtaYPyBSk8N6ngdqGowhw2W-1200-1200-675-675-crop-000000.jpg?v=666c355267"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/8o/13/yf/b8/zxF6LtaYPyBSk8N6ngdqGowhw2W-1200-1200-675-675-crop-000000.jpg?v=666c355267",
+   "runtime": 117,
+   "tmdb": 832964
   },
   {
    "slug": "the-piano-teacher",
@@ -874,7 +998,9 @@
     "French",
     "German"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/ee/6b/t9/v4/the-piano-teacher-1200-1200-675-675-crop-000000.jpg?v=dae4706be7"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/ee/6b/t9/v4/the-piano-teacher-1200-1200-675-675-crop-000000.jpg?v=dae4706be7",
+   "runtime": 131,
+   "tmdb": 1791
   },
   {
    "slug": "wild-things",
@@ -888,7 +1014,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/jd/ca/a6/a0/wild-things-1200-1200-675-675-crop-000000.jpg?v=b1096a4366"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/jd/ca/a6/a0/wild-things-1200-1200-675-675-crop-000000.jpg?v=b1096a4366",
+   "runtime": 108,
+   "tmdb": 617
   },
   {
    "slug": "mermaids",
@@ -902,7 +1030,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/7o/tf/pt/bt/mermaids-60-1200-1200-675-675-crop-000000.jpg?v=9771f4fc87"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/7o/tf/pt/bt/mermaids-60-1200-1200-675-675-crop-000000.jpg?v=9771f4fc87",
+   "runtime": 110,
+   "tmdb": 4587
   },
   {
    "slug": "carrie-1976",
@@ -915,7 +1045,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/oy/wp/1g/b5/carrie-1200-1200-675-675-crop-000000.jpg?v=358988d90c"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/oy/wp/1g/b5/carrie-1200-1200-675-675-crop-000000.jpg?v=358988d90c",
+   "runtime": 98,
+   "tmdb": 7340
   },
   {
    "slug": "the-social-network",
@@ -927,7 +1059,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/dr/ty/49/rl/the-social-network-2010-1200-1200-675-675-crop-000000.jpg?v=cbacd98bfa"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/dr/ty/49/rl/the-social-network-2010-1200-1200-675-675-crop-000000.jpg?v=cbacd98bfa",
+   "runtime": 121,
+   "tmdb": 37799
   },
   {
    "slug": "the-virgin-suicides",
@@ -940,7 +1074,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/6y/xk/bi/nf/the-virgin-suicides-70-1200-1200-675-675-crop-000000.jpg?v=69bb61a9c3"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/6y/xk/bi/nf/the-virgin-suicides-70-1200-1200-675-675-crop-000000.jpg?v=69bb61a9c3",
+   "runtime": 97,
+   "tmdb": 1443
   },
   {
    "slug": "late-night-with-the-devil",
@@ -952,7 +1088,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/31/0y/ek/6r/1q6Cx3RqP2Tq7WHGr32hKqrWafm-1200-1200-675-675-crop-000000.jpg?v=274c1b31bb"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/31/0y/ek/6r/1q6Cx3RqP2Tq7WHGr32hKqrWafm-1200-1200-675-675-crop-000000.jpg?v=274c1b31bb",
+   "runtime": 93,
+   "tmdb": 938614
   },
   {
    "slug": "heretic-2024",
@@ -965,7 +1103,9 @@
    "languages": [
     "English"
    ],
-   "image": "https://a.ltrbxd.com/resized/sm/upload/iv/y4/vx/uh/Heretic-1200-1200-675-675-crop-000000.jpg?v=d6f1534486"
+   "image": "https://a.ltrbxd.com/resized/sm/upload/iv/y4/vx/uh/Heretic-1200-1200-675-675-crop-000000.jpg?v=d6f1534486",
+   "runtime": 111,
+   "tmdb": 1138194
   }
  ]
 }
